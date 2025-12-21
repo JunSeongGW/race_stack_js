@@ -1,0 +1,1 @@
+/usr/bin/cc  -O2 -fPIC -DTARGET_AVX -m64 -mavx  -DUSE_C99_MATH -DRUNTIME_CHECKS CMakeFiles/d_tree_ocp_qp.dir/test_d_tree_ocp.c.o CMakeFiles/d_tree_ocp_qp.dir/d_tools.c.o -o d_tree_ocp_qp  ../libhpipm.a /home/misys/MPCC/C++/External/blasfeo/lib/lib/libblasfeo.a -lm 

@@ -1,0 +1,18 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/home/misys/project_ddm/deep-dynamics/deep_dynamics/model/evaluate.py",
+            "console": "integratedTerminal",
+            // "args": ["~/project_ddm/deep-dynamics/deep_dynamics/cfgs/model/deep_dynamics_f110.yaml", "~/shared_dir/ddm_data_5.npz", "test_0320_31"],
+            "args": ["~/project_ddm/deep-dynamics/deep_dynamics/cfgs/model/deep_dynamics_f110.yaml", "~/shared_dir/ddm_data_9.npz", "/home/misys/project_ddm/deep-dynamics/deep_dynamics/output/tune_hype/deep_dynamics_f110/3layers_94neurons_32batch_0.001016lr_9horizon_2gru/epoch_376.pth"]
+
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+/usr/bin/cc  -O2 -fPIC -DTARGET_AVX -m64 -mavx  -DUSE_C99_MATH -DRUNTIME_CHECKS CMakeFiles/d_dense_qp.dir/test_d_dense.c.o -o d_dense_qp  ../libhpipm.a /home/misys/MPCC/C++/External/blasfeo/lib/lib/libblasfeo.a -lm 
