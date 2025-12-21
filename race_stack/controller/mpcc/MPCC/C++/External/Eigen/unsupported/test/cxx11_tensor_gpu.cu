@@ -15,6 +15,8 @@
 #include "main.h"
 #include <unsupported/Eigen/CXX11/Tensor>
 
+#include <unsupported/Eigen/CXX11/src/Tensor/TensorGpuHipCudaDefines.h>
+
 using Eigen::Tensor;
 
 void test_gpu_nullary() {

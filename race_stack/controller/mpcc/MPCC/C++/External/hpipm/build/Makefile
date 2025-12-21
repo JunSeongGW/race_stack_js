@@ -1428,29 +1428,29 @@ ipm_core/d_core_qp_ipm.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hpipm.dir/build.make CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm.c.s
 .PHONY : ipm_core/d_core_qp_ipm.c.s
 
-ipm_core/d_core_qp_ipm_aux_avx.o: ipm_core/d_core_qp_ipm_aux_avx.c.o
-.PHONY : ipm_core/d_core_qp_ipm_aux_avx.o
+ipm_core/d_core_qp_ipm_aux.o: ipm_core/d_core_qp_ipm_aux.c.o
+.PHONY : ipm_core/d_core_qp_ipm_aux.o
 
 # target to build an object file
-ipm_core/d_core_qp_ipm_aux_avx.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hpipm.dir/build.make CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux_avx.c.o
-.PHONY : ipm_core/d_core_qp_ipm_aux_avx.c.o
+ipm_core/d_core_qp_ipm_aux.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hpipm.dir/build.make CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux.c.o
+.PHONY : ipm_core/d_core_qp_ipm_aux.c.o
 
-ipm_core/d_core_qp_ipm_aux_avx.i: ipm_core/d_core_qp_ipm_aux_avx.c.i
-.PHONY : ipm_core/d_core_qp_ipm_aux_avx.i
+ipm_core/d_core_qp_ipm_aux.i: ipm_core/d_core_qp_ipm_aux.c.i
+.PHONY : ipm_core/d_core_qp_ipm_aux.i
 
 # target to preprocess a source file
-ipm_core/d_core_qp_ipm_aux_avx.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hpipm.dir/build.make CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux_avx.c.i
-.PHONY : ipm_core/d_core_qp_ipm_aux_avx.c.i
+ipm_core/d_core_qp_ipm_aux.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hpipm.dir/build.make CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux.c.i
+.PHONY : ipm_core/d_core_qp_ipm_aux.c.i
 
-ipm_core/d_core_qp_ipm_aux_avx.s: ipm_core/d_core_qp_ipm_aux_avx.c.s
-.PHONY : ipm_core/d_core_qp_ipm_aux_avx.s
+ipm_core/d_core_qp_ipm_aux.s: ipm_core/d_core_qp_ipm_aux.c.s
+.PHONY : ipm_core/d_core_qp_ipm_aux.s
 
 # target to generate assembly for a file
-ipm_core/d_core_qp_ipm_aux_avx.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hpipm.dir/build.make CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux_avx.c.s
-.PHONY : ipm_core/d_core_qp_ipm_aux_avx.c.s
+ipm_core/d_core_qp_ipm_aux.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hpipm.dir/build.make CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux.c.s
+.PHONY : ipm_core/d_core_qp_ipm_aux.c.s
 
 ipm_core/s_core_qp_ipm.o: ipm_core/s_core_qp_ipm.c.o
 .PHONY : ipm_core/s_core_qp_ipm.o
@@ -1476,29 +1476,29 @@ ipm_core/s_core_qp_ipm.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hpipm.dir/build.make CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm.c.s
 .PHONY : ipm_core/s_core_qp_ipm.c.s
 
-ipm_core/s_core_qp_ipm_aux_avx.o: ipm_core/s_core_qp_ipm_aux_avx.c.o
-.PHONY : ipm_core/s_core_qp_ipm_aux_avx.o
+ipm_core/s_core_qp_ipm_aux.o: ipm_core/s_core_qp_ipm_aux.c.o
+.PHONY : ipm_core/s_core_qp_ipm_aux.o
 
 # target to build an object file
-ipm_core/s_core_qp_ipm_aux_avx.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hpipm.dir/build.make CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux_avx.c.o
-.PHONY : ipm_core/s_core_qp_ipm_aux_avx.c.o
+ipm_core/s_core_qp_ipm_aux.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hpipm.dir/build.make CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.o
+.PHONY : ipm_core/s_core_qp_ipm_aux.c.o
 
-ipm_core/s_core_qp_ipm_aux_avx.i: ipm_core/s_core_qp_ipm_aux_avx.c.i
-.PHONY : ipm_core/s_core_qp_ipm_aux_avx.i
+ipm_core/s_core_qp_ipm_aux.i: ipm_core/s_core_qp_ipm_aux.c.i
+.PHONY : ipm_core/s_core_qp_ipm_aux.i
 
 # target to preprocess a source file
-ipm_core/s_core_qp_ipm_aux_avx.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hpipm.dir/build.make CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux_avx.c.i
-.PHONY : ipm_core/s_core_qp_ipm_aux_avx.c.i
+ipm_core/s_core_qp_ipm_aux.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hpipm.dir/build.make CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.i
+.PHONY : ipm_core/s_core_qp_ipm_aux.c.i
 
-ipm_core/s_core_qp_ipm_aux_avx.s: ipm_core/s_core_qp_ipm_aux_avx.c.s
-.PHONY : ipm_core/s_core_qp_ipm_aux_avx.s
+ipm_core/s_core_qp_ipm_aux.s: ipm_core/s_core_qp_ipm_aux.c.s
+.PHONY : ipm_core/s_core_qp_ipm_aux.s
 
 # target to generate assembly for a file
-ipm_core/s_core_qp_ipm_aux_avx.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hpipm.dir/build.make CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux_avx.c.s
-.PHONY : ipm_core/s_core_qp_ipm_aux_avx.c.s
+ipm_core/s_core_qp_ipm_aux.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hpipm.dir/build.make CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.s
+.PHONY : ipm_core/s_core_qp_ipm_aux.c.s
 
 ocp_qp/d_ocp_qcqp.o: ocp_qp/d_ocp_qcqp.c.o
 .PHONY : ocp_qp/d_ocp_qcqp.o
@@ -3028,15 +3028,15 @@ help:
 	@echo "... ipm_core/d_core_qp_ipm.o"
 	@echo "... ipm_core/d_core_qp_ipm.i"
 	@echo "... ipm_core/d_core_qp_ipm.s"
-	@echo "... ipm_core/d_core_qp_ipm_aux_avx.o"
-	@echo "... ipm_core/d_core_qp_ipm_aux_avx.i"
-	@echo "... ipm_core/d_core_qp_ipm_aux_avx.s"
+	@echo "... ipm_core/d_core_qp_ipm_aux.o"
+	@echo "... ipm_core/d_core_qp_ipm_aux.i"
+	@echo "... ipm_core/d_core_qp_ipm_aux.s"
 	@echo "... ipm_core/s_core_qp_ipm.o"
 	@echo "... ipm_core/s_core_qp_ipm.i"
 	@echo "... ipm_core/s_core_qp_ipm.s"
-	@echo "... ipm_core/s_core_qp_ipm_aux_avx.o"
-	@echo "... ipm_core/s_core_qp_ipm_aux_avx.i"
-	@echo "... ipm_core/s_core_qp_ipm_aux_avx.s"
+	@echo "... ipm_core/s_core_qp_ipm_aux.o"
+	@echo "... ipm_core/s_core_qp_ipm_aux.i"
+	@echo "... ipm_core/s_core_qp_ipm_aux.s"
 	@echo "... ocp_qp/d_ocp_qcqp.o"
 	@echo "... ocp_qp/d_ocp_qcqp.i"
 	@echo "... ocp_qp/d_ocp_qcqp.s"

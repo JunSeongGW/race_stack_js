@@ -646,19 +646,19 @@ CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/misys/MPCC/C++/External/hpipm/ipm_core/d_core_qp_ipm.c -o CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm.c.s
 
-CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux_avx.c.o: CMakeFiles/hpipm.dir/flags.make
-CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux_avx.c.o: ../ipm_core/d_core_qp_ipm_aux_avx.c
-CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux_avx.c.o: CMakeFiles/hpipm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/misys/MPCC/C++/External/hpipm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux_avx.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux_avx.c.o -MF CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux_avx.c.o.d -o CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux_avx.c.o -c /home/misys/MPCC/C++/External/hpipm/ipm_core/d_core_qp_ipm_aux_avx.c
+CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux.c.o: CMakeFiles/hpipm.dir/flags.make
+CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux.c.o: ../ipm_core/d_core_qp_ipm_aux.c
+CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux.c.o: CMakeFiles/hpipm.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/misys/MPCC/C++/External/hpipm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux.c.o -MF CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux.c.o.d -o CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux.c.o -c /home/misys/MPCC/C++/External/hpipm/ipm_core/d_core_qp_ipm_aux.c
 
-CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux_avx.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux_avx.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/misys/MPCC/C++/External/hpipm/ipm_core/d_core_qp_ipm_aux_avx.c > CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux_avx.c.i
+CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/misys/MPCC/C++/External/hpipm/ipm_core/d_core_qp_ipm_aux.c > CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux.c.i
 
-CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux_avx.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux_avx.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/misys/MPCC/C++/External/hpipm/ipm_core/d_core_qp_ipm_aux_avx.c -o CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux_avx.c.s
+CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/misys/MPCC/C++/External/hpipm/ipm_core/d_core_qp_ipm_aux.c -o CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux.c.s
 
 CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm.c.o: CMakeFiles/hpipm.dir/flags.make
 CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm.c.o: ../ipm_core/s_core_qp_ipm.c
@@ -674,19 +674,19 @@ CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/misys/MPCC/C++/External/hpipm/ipm_core/s_core_qp_ipm.c -o CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm.c.s
 
-CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux_avx.c.o: CMakeFiles/hpipm.dir/flags.make
-CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux_avx.c.o: ../ipm_core/s_core_qp_ipm_aux_avx.c
-CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux_avx.c.o: CMakeFiles/hpipm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/misys/MPCC/C++/External/hpipm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux_avx.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux_avx.c.o -MF CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux_avx.c.o.d -o CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux_avx.c.o -c /home/misys/MPCC/C++/External/hpipm/ipm_core/s_core_qp_ipm_aux_avx.c
+CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.o: CMakeFiles/hpipm.dir/flags.make
+CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.o: ../ipm_core/s_core_qp_ipm_aux.c
+CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.o: CMakeFiles/hpipm.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/misys/MPCC/C++/External/hpipm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.o -MF CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.o.d -o CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.o -c /home/misys/MPCC/C++/External/hpipm/ipm_core/s_core_qp_ipm_aux.c
 
-CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux_avx.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux_avx.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/misys/MPCC/C++/External/hpipm/ipm_core/s_core_qp_ipm_aux_avx.c > CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux_avx.c.i
+CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/misys/MPCC/C++/External/hpipm/ipm_core/s_core_qp_ipm_aux.c > CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.i
 
-CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux_avx.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux_avx.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/misys/MPCC/C++/External/hpipm/ipm_core/s_core_qp_ipm_aux_avx.c -o CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux_avx.c.s
+CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/misys/MPCC/C++/External/hpipm/ipm_core/s_core_qp_ipm_aux.c -o CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.s
 
 CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp.c.o: CMakeFiles/hpipm.dir/flags.make
 CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp.c.o: ../ocp_qp/d_ocp_qcqp.c
@@ -1571,9 +1571,9 @@ hpipm_OBJECTS = \
 "CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_sol.c.o" \
 "CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_utils.c.o" \
 "CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm.c.o" \
-"CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux_avx.c.o" \
+"CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux.c.o" \
 "CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm.c.o" \
-"CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux_avx.c.o" \
+"CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.o" \
 "CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp.c.o" \
 "CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_dim.c.o" \
 "CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_ipm.c.o" \
@@ -1679,9 +1679,9 @@ libhpipm.a: CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_seed.c.o
 libhpipm.a: CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_sol.c.o
 libhpipm.a: CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_utils.c.o
 libhpipm.a: CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm.c.o
-libhpipm.a: CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux_avx.c.o
+libhpipm.a: CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux.c.o
 libhpipm.a: CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm.c.o
-libhpipm.a: CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux_avx.c.o
+libhpipm.a: CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.o
 libhpipm.a: CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp.c.o
 libhpipm.a: CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_dim.c.o
 libhpipm.a: CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_ipm.c.o

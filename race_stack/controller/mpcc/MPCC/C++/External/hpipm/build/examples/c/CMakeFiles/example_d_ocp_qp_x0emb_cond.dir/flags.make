@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = -I/home/misys/MPCC/C++/External/hpipm/include -I/home/misys/MPCC/C++/External/blasfeo/lib/include
 
-C_FLAGS =  -O2 -fPIC -DTARGET_AVX -m64 -mavx  -DUSE_C99_MATH -DRUNTIME_CHECKS
+C_FLAGS =  -O2 -fPIC  -DUSE_C99_MATH -DRUNTIME_CHECKS
 

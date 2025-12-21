@@ -17,6 +17,8 @@
 #include "main.h"
 #include <unsupported/Eigen/CXX11/Tensor>
 
+#include <unsupported/Eigen/CXX11/src/Tensor/TensorGpuHipCudaDefines.h>
+
 using Eigen::Tensor;
 typedef Tensor<float, 1>::DimensionPair DimPair;
 

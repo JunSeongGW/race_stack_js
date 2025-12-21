@@ -16,8 +16,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../cmake/TestSingleTarget.cmake"
   "../cmake/intrinsic_tests/intrinsic_test.c"
   "../cmake/intrinsic_tests/intrinsic_test.cmake"
-  "../cmake/isa_tests/TEST_AVX2.S"
-  "../cmake/isa_tests/TEST_FMA.S"
   "../cmake/isa_tests/isa_test.c"
   "../cmake/isa_tests/isa_test.cmake"
   "../examples/CMakeLists.txt"

@@ -180,7 +180,6 @@ struct packet_traits<float> : default_packet_traits {
     AlignedOnScalar = 1,
     size = 4,
 
-    HasCmp = 1,
     HasAdd = 1,
     HasSub = 1,
     HasMul = 1,

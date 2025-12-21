@@ -4,7 +4,7 @@
 #include <Eigen/Core>
 
 // Allow gpu** macros for generic tests.
-#include <Eigen/src/Core/util/GpuHipCudaDefines.inc>
+#include <unsupported/Eigen/CXX11/src/Tensor/TensorGpuHipCudaDefines.h>
 
 // std::tuple cannot be used on device, and there is a bug in cuda < 9.2 that
 // doesn't allow std::tuple to compile for host code either. In these cases,

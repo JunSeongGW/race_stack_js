@@ -447,29 +447,29 @@ auxiliary/i_aux_ext_dep_lib.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/auxiliary/i_aux_ext_dep_lib.c.s
 .PHONY : auxiliary/i_aux_ext_dep_lib.c.s
 
-auxiliary/m_aux_lib48.o: auxiliary/m_aux_lib48.c.o
-.PHONY : auxiliary/m_aux_lib48.o
+auxiliary/m_aux_lib44.o: auxiliary/m_aux_lib44.c.o
+.PHONY : auxiliary/m_aux_lib44.o
 
 # target to build an object file
-auxiliary/m_aux_lib48.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/auxiliary/m_aux_lib48.c.o
-.PHONY : auxiliary/m_aux_lib48.c.o
+auxiliary/m_aux_lib44.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/auxiliary/m_aux_lib44.c.o
+.PHONY : auxiliary/m_aux_lib44.c.o
 
-auxiliary/m_aux_lib48.i: auxiliary/m_aux_lib48.c.i
-.PHONY : auxiliary/m_aux_lib48.i
+auxiliary/m_aux_lib44.i: auxiliary/m_aux_lib44.c.i
+.PHONY : auxiliary/m_aux_lib44.i
 
 # target to preprocess a source file
-auxiliary/m_aux_lib48.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/auxiliary/m_aux_lib48.c.i
-.PHONY : auxiliary/m_aux_lib48.c.i
+auxiliary/m_aux_lib44.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/auxiliary/m_aux_lib44.c.i
+.PHONY : auxiliary/m_aux_lib44.c.i
 
-auxiliary/m_aux_lib48.s: auxiliary/m_aux_lib48.c.s
-.PHONY : auxiliary/m_aux_lib48.s
+auxiliary/m_aux_lib44.s: auxiliary/m_aux_lib44.c.s
+.PHONY : auxiliary/m_aux_lib44.s
 
 # target to generate assembly for a file
-auxiliary/m_aux_lib48.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/auxiliary/m_aux_lib48.c.s
-.PHONY : auxiliary/m_aux_lib48.c.s
+auxiliary/m_aux_lib44.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/auxiliary/m_aux_lib44.c.s
+.PHONY : auxiliary/m_aux_lib44.c.s
 
 auxiliary/memory.o: auxiliary/memory.c.o
 .PHONY : auxiliary/memory.o
@@ -567,29 +567,29 @@ auxiliary/s_aux_ext_dep_common.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/auxiliary/s_aux_ext_dep_common.c.s
 .PHONY : auxiliary/s_aux_ext_dep_common.c.s
 
-auxiliary/s_aux_lib8.o: auxiliary/s_aux_lib8.c.o
-.PHONY : auxiliary/s_aux_lib8.o
+auxiliary/s_aux_lib4.o: auxiliary/s_aux_lib4.c.o
+.PHONY : auxiliary/s_aux_lib4.o
 
 # target to build an object file
-auxiliary/s_aux_lib8.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/auxiliary/s_aux_lib8.c.o
-.PHONY : auxiliary/s_aux_lib8.c.o
+auxiliary/s_aux_lib4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/auxiliary/s_aux_lib4.c.o
+.PHONY : auxiliary/s_aux_lib4.c.o
 
-auxiliary/s_aux_lib8.i: auxiliary/s_aux_lib8.c.i
-.PHONY : auxiliary/s_aux_lib8.i
+auxiliary/s_aux_lib4.i: auxiliary/s_aux_lib4.c.i
+.PHONY : auxiliary/s_aux_lib4.i
 
 # target to preprocess a source file
-auxiliary/s_aux_lib8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/auxiliary/s_aux_lib8.c.i
-.PHONY : auxiliary/s_aux_lib8.c.i
+auxiliary/s_aux_lib4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/auxiliary/s_aux_lib4.c.i
+.PHONY : auxiliary/s_aux_lib4.c.i
 
-auxiliary/s_aux_lib8.s: auxiliary/s_aux_lib8.c.s
-.PHONY : auxiliary/s_aux_lib8.s
+auxiliary/s_aux_lib4.s: auxiliary/s_aux_lib4.c.s
+.PHONY : auxiliary/s_aux_lib4.s
 
 # target to generate assembly for a file
-auxiliary/s_aux_lib8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/auxiliary/s_aux_lib8.c.s
-.PHONY : auxiliary/s_aux_lib8.c.s
+auxiliary/s_aux_lib4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/auxiliary/s_aux_lib4.c.s
+.PHONY : auxiliary/s_aux_lib4.c.s
 
 auxiliary/s_aux_ref.o: auxiliary/s_aux_ref.c.o
 .PHONY : auxiliary/s_aux_ref.o
@@ -1743,29 +1743,29 @@ blasfeo_hp_pm/d_lapack_lib4.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_lapack_lib4.c.s
 .PHONY : blasfeo_hp_pm/d_lapack_lib4.c.s
 
-blasfeo_hp_pm/s_blas1_lib8.o: blasfeo_hp_pm/s_blas1_lib8.c.o
-.PHONY : blasfeo_hp_pm/s_blas1_lib8.o
+blasfeo_hp_pm/s_blas1_lib4.o: blasfeo_hp_pm/s_blas1_lib4.c.o
+.PHONY : blasfeo_hp_pm/s_blas1_lib4.o
 
 # target to build an object file
-blasfeo_hp_pm/s_blas1_lib8.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas1_lib8.c.o
-.PHONY : blasfeo_hp_pm/s_blas1_lib8.c.o
+blasfeo_hp_pm/s_blas1_lib4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas1_lib4.c.o
+.PHONY : blasfeo_hp_pm/s_blas1_lib4.c.o
 
-blasfeo_hp_pm/s_blas1_lib8.i: blasfeo_hp_pm/s_blas1_lib8.c.i
-.PHONY : blasfeo_hp_pm/s_blas1_lib8.i
+blasfeo_hp_pm/s_blas1_lib4.i: blasfeo_hp_pm/s_blas1_lib4.c.i
+.PHONY : blasfeo_hp_pm/s_blas1_lib4.i
 
 # target to preprocess a source file
-blasfeo_hp_pm/s_blas1_lib8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas1_lib8.c.i
-.PHONY : blasfeo_hp_pm/s_blas1_lib8.c.i
+blasfeo_hp_pm/s_blas1_lib4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas1_lib4.c.i
+.PHONY : blasfeo_hp_pm/s_blas1_lib4.c.i
 
-blasfeo_hp_pm/s_blas1_lib8.s: blasfeo_hp_pm/s_blas1_lib8.c.s
-.PHONY : blasfeo_hp_pm/s_blas1_lib8.s
+blasfeo_hp_pm/s_blas1_lib4.s: blasfeo_hp_pm/s_blas1_lib4.c.s
+.PHONY : blasfeo_hp_pm/s_blas1_lib4.s
 
 # target to generate assembly for a file
-blasfeo_hp_pm/s_blas1_lib8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas1_lib8.c.s
-.PHONY : blasfeo_hp_pm/s_blas1_lib8.c.s
+blasfeo_hp_pm/s_blas1_lib4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas1_lib4.c.s
+.PHONY : blasfeo_hp_pm/s_blas1_lib4.c.s
 
 blasfeo_hp_pm/s_blas2_diag_lib.o: blasfeo_hp_pm/s_blas2_diag_lib.c.o
 .PHONY : blasfeo_hp_pm/s_blas2_diag_lib.o
@@ -1791,101 +1791,101 @@ blasfeo_hp_pm/s_blas2_diag_lib.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas2_diag_lib.c.s
 .PHONY : blasfeo_hp_pm/s_blas2_diag_lib.c.s
 
-blasfeo_hp_pm/s_blas2_lib8.o: blasfeo_hp_pm/s_blas2_lib8.c.o
-.PHONY : blasfeo_hp_pm/s_blas2_lib8.o
+blasfeo_hp_pm/s_blas2_lib4.o: blasfeo_hp_pm/s_blas2_lib4.c.o
+.PHONY : blasfeo_hp_pm/s_blas2_lib4.o
 
 # target to build an object file
-blasfeo_hp_pm/s_blas2_lib8.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas2_lib8.c.o
-.PHONY : blasfeo_hp_pm/s_blas2_lib8.c.o
+blasfeo_hp_pm/s_blas2_lib4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas2_lib4.c.o
+.PHONY : blasfeo_hp_pm/s_blas2_lib4.c.o
 
-blasfeo_hp_pm/s_blas2_lib8.i: blasfeo_hp_pm/s_blas2_lib8.c.i
-.PHONY : blasfeo_hp_pm/s_blas2_lib8.i
+blasfeo_hp_pm/s_blas2_lib4.i: blasfeo_hp_pm/s_blas2_lib4.c.i
+.PHONY : blasfeo_hp_pm/s_blas2_lib4.i
 
 # target to preprocess a source file
-blasfeo_hp_pm/s_blas2_lib8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas2_lib8.c.i
-.PHONY : blasfeo_hp_pm/s_blas2_lib8.c.i
+blasfeo_hp_pm/s_blas2_lib4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas2_lib4.c.i
+.PHONY : blasfeo_hp_pm/s_blas2_lib4.c.i
 
-blasfeo_hp_pm/s_blas2_lib8.s: blasfeo_hp_pm/s_blas2_lib8.c.s
-.PHONY : blasfeo_hp_pm/s_blas2_lib8.s
+blasfeo_hp_pm/s_blas2_lib4.s: blasfeo_hp_pm/s_blas2_lib4.c.s
+.PHONY : blasfeo_hp_pm/s_blas2_lib4.s
 
 # target to generate assembly for a file
-blasfeo_hp_pm/s_blas2_lib8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas2_lib8.c.s
-.PHONY : blasfeo_hp_pm/s_blas2_lib8.c.s
+blasfeo_hp_pm/s_blas2_lib4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas2_lib4.c.s
+.PHONY : blasfeo_hp_pm/s_blas2_lib4.c.s
 
-blasfeo_hp_pm/s_blas3_diag_lib8.o: blasfeo_hp_pm/s_blas3_diag_lib8.c.o
-.PHONY : blasfeo_hp_pm/s_blas3_diag_lib8.o
+blasfeo_hp_pm/s_blas3_diag_lib4.o: blasfeo_hp_pm/s_blas3_diag_lib4.c.o
+.PHONY : blasfeo_hp_pm/s_blas3_diag_lib4.o
 
 # target to build an object file
-blasfeo_hp_pm/s_blas3_diag_lib8.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas3_diag_lib8.c.o
-.PHONY : blasfeo_hp_pm/s_blas3_diag_lib8.c.o
+blasfeo_hp_pm/s_blas3_diag_lib4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas3_diag_lib4.c.o
+.PHONY : blasfeo_hp_pm/s_blas3_diag_lib4.c.o
 
-blasfeo_hp_pm/s_blas3_diag_lib8.i: blasfeo_hp_pm/s_blas3_diag_lib8.c.i
-.PHONY : blasfeo_hp_pm/s_blas3_diag_lib8.i
+blasfeo_hp_pm/s_blas3_diag_lib4.i: blasfeo_hp_pm/s_blas3_diag_lib4.c.i
+.PHONY : blasfeo_hp_pm/s_blas3_diag_lib4.i
 
 # target to preprocess a source file
-blasfeo_hp_pm/s_blas3_diag_lib8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas3_diag_lib8.c.i
-.PHONY : blasfeo_hp_pm/s_blas3_diag_lib8.c.i
+blasfeo_hp_pm/s_blas3_diag_lib4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas3_diag_lib4.c.i
+.PHONY : blasfeo_hp_pm/s_blas3_diag_lib4.c.i
 
-blasfeo_hp_pm/s_blas3_diag_lib8.s: blasfeo_hp_pm/s_blas3_diag_lib8.c.s
-.PHONY : blasfeo_hp_pm/s_blas3_diag_lib8.s
+blasfeo_hp_pm/s_blas3_diag_lib4.s: blasfeo_hp_pm/s_blas3_diag_lib4.c.s
+.PHONY : blasfeo_hp_pm/s_blas3_diag_lib4.s
 
 # target to generate assembly for a file
-blasfeo_hp_pm/s_blas3_diag_lib8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas3_diag_lib8.c.s
-.PHONY : blasfeo_hp_pm/s_blas3_diag_lib8.c.s
+blasfeo_hp_pm/s_blas3_diag_lib4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas3_diag_lib4.c.s
+.PHONY : blasfeo_hp_pm/s_blas3_diag_lib4.c.s
 
-blasfeo_hp_pm/s_blas3_lib8.o: blasfeo_hp_pm/s_blas3_lib8.c.o
-.PHONY : blasfeo_hp_pm/s_blas3_lib8.o
+blasfeo_hp_pm/s_blas3_lib4.o: blasfeo_hp_pm/s_blas3_lib4.c.o
+.PHONY : blasfeo_hp_pm/s_blas3_lib4.o
 
 # target to build an object file
-blasfeo_hp_pm/s_blas3_lib8.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas3_lib8.c.o
-.PHONY : blasfeo_hp_pm/s_blas3_lib8.c.o
+blasfeo_hp_pm/s_blas3_lib4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas3_lib4.c.o
+.PHONY : blasfeo_hp_pm/s_blas3_lib4.c.o
 
-blasfeo_hp_pm/s_blas3_lib8.i: blasfeo_hp_pm/s_blas3_lib8.c.i
-.PHONY : blasfeo_hp_pm/s_blas3_lib8.i
+blasfeo_hp_pm/s_blas3_lib4.i: blasfeo_hp_pm/s_blas3_lib4.c.i
+.PHONY : blasfeo_hp_pm/s_blas3_lib4.i
 
 # target to preprocess a source file
-blasfeo_hp_pm/s_blas3_lib8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas3_lib8.c.i
-.PHONY : blasfeo_hp_pm/s_blas3_lib8.c.i
+blasfeo_hp_pm/s_blas3_lib4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas3_lib4.c.i
+.PHONY : blasfeo_hp_pm/s_blas3_lib4.c.i
 
-blasfeo_hp_pm/s_blas3_lib8.s: blasfeo_hp_pm/s_blas3_lib8.c.s
-.PHONY : blasfeo_hp_pm/s_blas3_lib8.s
+blasfeo_hp_pm/s_blas3_lib4.s: blasfeo_hp_pm/s_blas3_lib4.c.s
+.PHONY : blasfeo_hp_pm/s_blas3_lib4.s
 
 # target to generate assembly for a file
-blasfeo_hp_pm/s_blas3_lib8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas3_lib8.c.s
-.PHONY : blasfeo_hp_pm/s_blas3_lib8.c.s
+blasfeo_hp_pm/s_blas3_lib4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas3_lib4.c.s
+.PHONY : blasfeo_hp_pm/s_blas3_lib4.c.s
 
-blasfeo_hp_pm/s_lapack_lib8.o: blasfeo_hp_pm/s_lapack_lib8.c.o
-.PHONY : blasfeo_hp_pm/s_lapack_lib8.o
+blasfeo_hp_pm/s_lapack_lib4.o: blasfeo_hp_pm/s_lapack_lib4.c.o
+.PHONY : blasfeo_hp_pm/s_lapack_lib4.o
 
 # target to build an object file
-blasfeo_hp_pm/s_lapack_lib8.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_lapack_lib8.c.o
-.PHONY : blasfeo_hp_pm/s_lapack_lib8.c.o
+blasfeo_hp_pm/s_lapack_lib4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_lapack_lib4.c.o
+.PHONY : blasfeo_hp_pm/s_lapack_lib4.c.o
 
-blasfeo_hp_pm/s_lapack_lib8.i: blasfeo_hp_pm/s_lapack_lib8.c.i
-.PHONY : blasfeo_hp_pm/s_lapack_lib8.i
+blasfeo_hp_pm/s_lapack_lib4.i: blasfeo_hp_pm/s_lapack_lib4.c.i
+.PHONY : blasfeo_hp_pm/s_lapack_lib4.i
 
 # target to preprocess a source file
-blasfeo_hp_pm/s_lapack_lib8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_lapack_lib8.c.i
-.PHONY : blasfeo_hp_pm/s_lapack_lib8.c.i
+blasfeo_hp_pm/s_lapack_lib4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_lapack_lib4.c.i
+.PHONY : blasfeo_hp_pm/s_lapack_lib4.c.i
 
-blasfeo_hp_pm/s_lapack_lib8.s: blasfeo_hp_pm/s_lapack_lib8.c.s
-.PHONY : blasfeo_hp_pm/s_lapack_lib8.s
+blasfeo_hp_pm/s_lapack_lib4.s: blasfeo_hp_pm/s_lapack_lib4.c.s
+.PHONY : blasfeo_hp_pm/s_lapack_lib4.s
 
 # target to generate assembly for a file
-blasfeo_hp_pm/s_lapack_lib8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_lapack_lib8.c.s
-.PHONY : blasfeo_hp_pm/s_lapack_lib8.c.s
+blasfeo_hp_pm/s_lapack_lib4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_lapack_lib4.c.s
+.PHONY : blasfeo_hp_pm/s_lapack_lib4.c.s
 
 blasfeo_ref/d_blas1_ref.o: blasfeo_ref/d_blas1_ref.c.o
 .PHONY : blasfeo_ref/d_blas1_ref.o
@@ -2175,333 +2175,165 @@ blasfeo_ref/s_lapack_ref.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/blasfeo_ref/s_lapack_ref.c.s
 .PHONY : blasfeo_ref/s_lapack_ref.c.s
 
-kernel/avx/kernel_d_aux_lib.o: kernel/avx/kernel_d_aux_lib.S.o
-.PHONY : kernel/avx/kernel_d_aux_lib.o
+kernel/armv8a/kernel_d_aux_lib.o: kernel/armv8a/kernel_d_aux_lib.S.o
+.PHONY : kernel/armv8a/kernel_d_aux_lib.o
 
 # target to build an object file
-kernel/avx/kernel_d_aux_lib.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx/kernel_d_aux_lib.S.o
-.PHONY : kernel/avx/kernel_d_aux_lib.S.o
+kernel/armv8a/kernel_d_aux_lib.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/armv8a/kernel_d_aux_lib.S.o
+.PHONY : kernel/armv8a/kernel_d_aux_lib.S.o
 
-kernel/avx/kernel_dgecp_lib4.o: kernel/avx/kernel_dgecp_lib4.c.o
-.PHONY : kernel/avx/kernel_dgecp_lib4.o
+kernel/armv8a/kernel_dgemm_4x4_lib4.o: kernel/armv8a/kernel_dgemm_4x4_lib4.S.o
+.PHONY : kernel/armv8a/kernel_dgemm_4x4_lib4.o
 
 # target to build an object file
-kernel/avx/kernel_dgecp_lib4.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgecp_lib4.c.o
-.PHONY : kernel/avx/kernel_dgecp_lib4.c.o
+kernel/armv8a/kernel_dgemm_4x4_lib4.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/armv8a/kernel_dgemm_4x4_lib4.S.o
+.PHONY : kernel/armv8a/kernel_dgemm_4x4_lib4.S.o
 
-kernel/avx/kernel_dgecp_lib4.i: kernel/avx/kernel_dgecp_lib4.c.i
-.PHONY : kernel/avx/kernel_dgecp_lib4.i
+kernel/armv8a/kernel_dgemm_8x4_lib4.o: kernel/armv8a/kernel_dgemm_8x4_lib4.S.o
+.PHONY : kernel/armv8a/kernel_dgemm_8x4_lib4.o
+
+# target to build an object file
+kernel/armv8a/kernel_dgemm_8x4_lib4.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/armv8a/kernel_dgemm_8x4_lib4.S.o
+.PHONY : kernel/armv8a/kernel_dgemm_8x4_lib4.S.o
+
+kernel/armv8a/kernel_dgemv_4_lib4.o: kernel/armv8a/kernel_dgemv_4_lib4.S.o
+.PHONY : kernel/armv8a/kernel_dgemv_4_lib4.o
+
+# target to build an object file
+kernel/armv8a/kernel_dgemv_4_lib4.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/armv8a/kernel_dgemv_4_lib4.S.o
+.PHONY : kernel/armv8a/kernel_dgemv_4_lib4.S.o
+
+kernel/armv8a/kernel_dger_lib4.o: kernel/armv8a/kernel_dger_lib4.S.o
+.PHONY : kernel/armv8a/kernel_dger_lib4.o
+
+# target to build an object file
+kernel/armv8a/kernel_dger_lib4.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/armv8a/kernel_dger_lib4.S.o
+.PHONY : kernel/armv8a/kernel_dger_lib4.S.o
+
+kernel/armv8a/kernel_dgetr_lib.o: kernel/armv8a/kernel_dgetr_lib.S.o
+.PHONY : kernel/armv8a/kernel_dgetr_lib.o
+
+# target to build an object file
+kernel/armv8a/kernel_dgetr_lib.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/armv8a/kernel_dgetr_lib.S.o
+.PHONY : kernel/armv8a/kernel_dgetr_lib.S.o
+
+kernel/armv8a/kernel_dgetrf_pivot_lib4.o: kernel/armv8a/kernel_dgetrf_pivot_lib4.c.o
+.PHONY : kernel/armv8a/kernel_dgetrf_pivot_lib4.o
+
+# target to build an object file
+kernel/armv8a/kernel_dgetrf_pivot_lib4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/armv8a/kernel_dgetrf_pivot_lib4.c.o
+.PHONY : kernel/armv8a/kernel_dgetrf_pivot_lib4.c.o
+
+kernel/armv8a/kernel_dgetrf_pivot_lib4.i: kernel/armv8a/kernel_dgetrf_pivot_lib4.c.i
+.PHONY : kernel/armv8a/kernel_dgetrf_pivot_lib4.i
 
 # target to preprocess a source file
-kernel/avx/kernel_dgecp_lib4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgecp_lib4.c.i
-.PHONY : kernel/avx/kernel_dgecp_lib4.c.i
+kernel/armv8a/kernel_dgetrf_pivot_lib4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/armv8a/kernel_dgetrf_pivot_lib4.c.i
+.PHONY : kernel/armv8a/kernel_dgetrf_pivot_lib4.c.i
 
-kernel/avx/kernel_dgecp_lib4.s: kernel/avx/kernel_dgecp_lib4.c.s
-.PHONY : kernel/avx/kernel_dgecp_lib4.s
+kernel/armv8a/kernel_dgetrf_pivot_lib4.s: kernel/armv8a/kernel_dgetrf_pivot_lib4.c.s
+.PHONY : kernel/armv8a/kernel_dgetrf_pivot_lib4.s
 
 # target to generate assembly for a file
-kernel/avx/kernel_dgecp_lib4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgecp_lib4.c.s
-.PHONY : kernel/avx/kernel_dgecp_lib4.c.s
+kernel/armv8a/kernel_dgetrf_pivot_lib4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/armv8a/kernel_dgetrf_pivot_lib4.c.s
+.PHONY : kernel/armv8a/kernel_dgetrf_pivot_lib4.c.s
 
-kernel/avx/kernel_dgemm_diag_lib4.o: kernel/avx/kernel_dgemm_diag_lib4.c.o
-.PHONY : kernel/avx/kernel_dgemm_diag_lib4.o
+kernel/armv8a/kernel_dpack_lib4.o: kernel/armv8a/kernel_dpack_lib4.S.o
+.PHONY : kernel/armv8a/kernel_dpack_lib4.o
 
 # target to build an object file
-kernel/avx/kernel_dgemm_diag_lib4.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgemm_diag_lib4.c.o
-.PHONY : kernel/avx/kernel_dgemm_diag_lib4.c.o
+kernel/armv8a/kernel_dpack_lib4.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/armv8a/kernel_dpack_lib4.S.o
+.PHONY : kernel/armv8a/kernel_dpack_lib4.S.o
 
-kernel/avx/kernel_dgemm_diag_lib4.i: kernel/avx/kernel_dgemm_diag_lib4.c.i
-.PHONY : kernel/avx/kernel_dgemm_diag_lib4.i
+kernel/armv8a/kernel_sgemm_12x4_lib4.o: kernel/armv8a/kernel_sgemm_12x4_lib4.S.o
+.PHONY : kernel/armv8a/kernel_sgemm_12x4_lib4.o
+
+# target to build an object file
+kernel/armv8a/kernel_sgemm_12x4_lib4.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/armv8a/kernel_sgemm_12x4_lib4.S.o
+.PHONY : kernel/armv8a/kernel_sgemm_12x4_lib4.S.o
+
+kernel/armv8a/kernel_sgemm_16x4_lib4.o: kernel/armv8a/kernel_sgemm_16x4_lib4.S.o
+.PHONY : kernel/armv8a/kernel_sgemm_16x4_lib4.o
+
+# target to build an object file
+kernel/armv8a/kernel_sgemm_16x4_lib4.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/armv8a/kernel_sgemm_16x4_lib4.S.o
+.PHONY : kernel/armv8a/kernel_sgemm_16x4_lib4.S.o
+
+kernel/armv8a/kernel_sgemm_4x4_lib4.o: kernel/armv8a/kernel_sgemm_4x4_lib4.S.o
+.PHONY : kernel/armv8a/kernel_sgemm_4x4_lib4.o
+
+# target to build an object file
+kernel/armv8a/kernel_sgemm_4x4_lib4.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/armv8a/kernel_sgemm_4x4_lib4.S.o
+.PHONY : kernel/armv8a/kernel_sgemm_4x4_lib4.S.o
+
+kernel/armv8a/kernel_sgemm_8x4_lib4.o: kernel/armv8a/kernel_sgemm_8x4_lib4.S.o
+.PHONY : kernel/armv8a/kernel_sgemm_8x4_lib4.o
+
+# target to build an object file
+kernel/armv8a/kernel_sgemm_8x4_lib4.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/armv8a/kernel_sgemm_8x4_lib4.S.o
+.PHONY : kernel/armv8a/kernel_sgemm_8x4_lib4.S.o
+
+kernel/armv8a/kernel_sgemm_8x8_lib4.o: kernel/armv8a/kernel_sgemm_8x8_lib4.S.o
+.PHONY : kernel/armv8a/kernel_sgemm_8x8_lib4.o
+
+# target to build an object file
+kernel/armv8a/kernel_sgemm_8x8_lib4.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/armv8a/kernel_sgemm_8x8_lib4.S.o
+.PHONY : kernel/armv8a/kernel_sgemm_8x8_lib4.S.o
+
+kernel/armv8a/kernel_sgemv_4_lib4.o: kernel/armv8a/kernel_sgemv_4_lib4.S.o
+.PHONY : kernel/armv8a/kernel_sgemv_4_lib4.o
+
+# target to build an object file
+kernel/armv8a/kernel_sgemv_4_lib4.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/armv8a/kernel_sgemv_4_lib4.S.o
+.PHONY : kernel/armv8a/kernel_sgemv_4_lib4.S.o
+
+kernel/armv8a/kernel_spack_lib4.o: kernel/armv8a/kernel_spack_lib4.S.o
+.PHONY : kernel/armv8a/kernel_spack_lib4.o
+
+# target to build an object file
+kernel/armv8a/kernel_spack_lib4.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/armv8a/kernel_spack_lib4.S.o
+.PHONY : kernel/armv8a/kernel_spack_lib4.S.o
+
+kernel/generic/kernel_align_generic.o: kernel/generic/kernel_align_generic.c.o
+.PHONY : kernel/generic/kernel_align_generic.o
+
+# target to build an object file
+kernel/generic/kernel_align_generic.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_align_generic.c.o
+.PHONY : kernel/generic/kernel_align_generic.c.o
+
+kernel/generic/kernel_align_generic.i: kernel/generic/kernel_align_generic.c.i
+.PHONY : kernel/generic/kernel_align_generic.i
 
 # target to preprocess a source file
-kernel/avx/kernel_dgemm_diag_lib4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgemm_diag_lib4.c.i
-.PHONY : kernel/avx/kernel_dgemm_diag_lib4.c.i
+kernel/generic/kernel_align_generic.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_align_generic.c.i
+.PHONY : kernel/generic/kernel_align_generic.c.i
 
-kernel/avx/kernel_dgemm_diag_lib4.s: kernel/avx/kernel_dgemm_diag_lib4.c.s
-.PHONY : kernel/avx/kernel_dgemm_diag_lib4.s
-
-# target to generate assembly for a file
-kernel/avx/kernel_dgemm_diag_lib4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgemm_diag_lib4.c.s
-.PHONY : kernel/avx/kernel_dgemm_diag_lib4.c.s
-
-kernel/avx/kernel_dgeqrf_4_lib4.o: kernel/avx/kernel_dgeqrf_4_lib4.c.o
-.PHONY : kernel/avx/kernel_dgeqrf_4_lib4.o
-
-# target to build an object file
-kernel/avx/kernel_dgeqrf_4_lib4.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgeqrf_4_lib4.c.o
-.PHONY : kernel/avx/kernel_dgeqrf_4_lib4.c.o
-
-kernel/avx/kernel_dgeqrf_4_lib4.i: kernel/avx/kernel_dgeqrf_4_lib4.c.i
-.PHONY : kernel/avx/kernel_dgeqrf_4_lib4.i
-
-# target to preprocess a source file
-kernel/avx/kernel_dgeqrf_4_lib4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgeqrf_4_lib4.c.i
-.PHONY : kernel/avx/kernel_dgeqrf_4_lib4.c.i
-
-kernel/avx/kernel_dgeqrf_4_lib4.s: kernel/avx/kernel_dgeqrf_4_lib4.c.s
-.PHONY : kernel/avx/kernel_dgeqrf_4_lib4.s
+kernel/generic/kernel_align_generic.s: kernel/generic/kernel_align_generic.c.s
+.PHONY : kernel/generic/kernel_align_generic.s
 
 # target to generate assembly for a file
-kernel/avx/kernel_dgeqrf_4_lib4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgeqrf_4_lib4.c.s
-.PHONY : kernel/avx/kernel_dgeqrf_4_lib4.c.s
-
-kernel/avx/kernel_dgetr_lib.o: kernel/avx/kernel_dgetr_lib.S.o
-.PHONY : kernel/avx/kernel_dgetr_lib.o
-
-# target to build an object file
-kernel/avx/kernel_dgetr_lib.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgetr_lib.S.o
-.PHONY : kernel/avx/kernel_dgetr_lib.S.o
-
-kernel/avx/kernel_dpack_lib4.o: kernel/avx/kernel_dpack_lib4.S.o
-.PHONY : kernel/avx/kernel_dpack_lib4.o
-
-# target to build an object file
-kernel/avx/kernel_dpack_lib4.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx/kernel_dpack_lib4.S.o
-.PHONY : kernel/avx/kernel_dpack_lib4.S.o
-
-kernel/avx/kernel_sgead_lib8.o: kernel/avx/kernel_sgead_lib8.S.o
-.PHONY : kernel/avx/kernel_sgead_lib8.o
-
-# target to build an object file
-kernel/avx/kernel_sgead_lib8.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgead_lib8.S.o
-.PHONY : kernel/avx/kernel_sgead_lib8.S.o
-
-kernel/avx/kernel_sgecpsc_lib8.o: kernel/avx/kernel_sgecpsc_lib8.S.o
-.PHONY : kernel/avx/kernel_sgecpsc_lib8.o
-
-# target to build an object file
-kernel/avx/kernel_sgecpsc_lib8.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgecpsc_lib8.S.o
-.PHONY : kernel/avx/kernel_sgecpsc_lib8.S.o
-
-kernel/avx/kernel_sgemm_diag_lib8.o: kernel/avx/kernel_sgemm_diag_lib8.c.o
-.PHONY : kernel/avx/kernel_sgemm_diag_lib8.o
-
-# target to build an object file
-kernel/avx/kernel_sgemm_diag_lib8.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgemm_diag_lib8.c.o
-.PHONY : kernel/avx/kernel_sgemm_diag_lib8.c.o
-
-kernel/avx/kernel_sgemm_diag_lib8.i: kernel/avx/kernel_sgemm_diag_lib8.c.i
-.PHONY : kernel/avx/kernel_sgemm_diag_lib8.i
-
-# target to preprocess a source file
-kernel/avx/kernel_sgemm_diag_lib8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgemm_diag_lib8.c.i
-.PHONY : kernel/avx/kernel_sgemm_diag_lib8.c.i
-
-kernel/avx/kernel_sgemm_diag_lib8.s: kernel/avx/kernel_sgemm_diag_lib8.c.s
-.PHONY : kernel/avx/kernel_sgemm_diag_lib8.s
-
-# target to generate assembly for a file
-kernel/avx/kernel_sgemm_diag_lib8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgemm_diag_lib8.c.s
-.PHONY : kernel/avx/kernel_sgemm_diag_lib8.c.s
-
-kernel/avx/kernel_sgemv_4_lib8.o: kernel/avx/kernel_sgemv_4_lib8.S.o
-.PHONY : kernel/avx/kernel_sgemv_4_lib8.o
-
-# target to build an object file
-kernel/avx/kernel_sgemv_4_lib8.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgemv_4_lib8.S.o
-.PHONY : kernel/avx/kernel_sgemv_4_lib8.S.o
-
-kernel/avx/kernel_sgemv_8_lib8.o: kernel/avx/kernel_sgemv_8_lib8.S.o
-.PHONY : kernel/avx/kernel_sgemv_8_lib8.o
-
-# target to build an object file
-kernel/avx/kernel_sgemv_8_lib8.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgemv_8_lib8.S.o
-.PHONY : kernel/avx/kernel_sgemv_8_lib8.S.o
-
-kernel/avx/kernel_sgetr_lib8.o: kernel/avx/kernel_sgetr_lib8.S.o
-.PHONY : kernel/avx/kernel_sgetr_lib8.o
-
-# target to build an object file
-kernel/avx/kernel_sgetr_lib8.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgetr_lib8.S.o
-.PHONY : kernel/avx/kernel_sgetr_lib8.S.o
-
-kernel/avx/kernel_spack_lib8.o: kernel/avx/kernel_spack_lib8.S.o
-.PHONY : kernel/avx/kernel_spack_lib8.o
-
-# target to build an object file
-kernel/avx/kernel_spack_lib8.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx/kernel_spack_lib8.S.o
-.PHONY : kernel/avx/kernel_spack_lib8.S.o
-
-kernel/avx2/kernel_dgebp_lib4.o: kernel/avx2/kernel_dgebp_lib4.S.o
-.PHONY : kernel/avx2/kernel_dgebp_lib4.o
-
-# target to build an object file
-kernel/avx2/kernel_dgebp_lib4.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgebp_lib4.S.o
-.PHONY : kernel/avx2/kernel_dgebp_lib4.S.o
-
-kernel/avx2/kernel_dgelqf_4_lib4.o: kernel/avx2/kernel_dgelqf_4_lib4.S.o
-.PHONY : kernel/avx2/kernel_dgelqf_4_lib4.o
-
-# target to build an object file
-kernel/avx2/kernel_dgelqf_4_lib4.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgelqf_4_lib4.S.o
-.PHONY : kernel/avx2/kernel_dgelqf_4_lib4.S.o
-
-kernel/avx2/kernel_dgemm_12x4_lib4.o: kernel/avx2/kernel_dgemm_12x4_lib4.S.o
-.PHONY : kernel/avx2/kernel_dgemm_12x4_lib4.o
-
-# target to build an object file
-kernel/avx2/kernel_dgemm_12x4_lib4.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemm_12x4_lib4.S.o
-.PHONY : kernel/avx2/kernel_dgemm_12x4_lib4.S.o
-
-kernel/avx2/kernel_dgemm_4x4_lib4.o: kernel/avx2/kernel_dgemm_4x4_lib4.S.o
-.PHONY : kernel/avx2/kernel_dgemm_4x4_lib4.o
-
-# target to build an object file
-kernel/avx2/kernel_dgemm_4x4_lib4.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemm_4x4_lib4.S.o
-.PHONY : kernel/avx2/kernel_dgemm_4x4_lib4.S.o
-
-kernel/avx2/kernel_dgemm_8x4_lib4.o: kernel/avx2/kernel_dgemm_8x4_lib4.S.o
-.PHONY : kernel/avx2/kernel_dgemm_8x4_lib4.o
-
-# target to build an object file
-kernel/avx2/kernel_dgemm_8x4_lib4.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemm_8x4_lib4.S.o
-.PHONY : kernel/avx2/kernel_dgemm_8x4_lib4.S.o
-
-kernel/avx2/kernel_dgemm_8x8_lib4.o: kernel/avx2/kernel_dgemm_8x8_lib4.S.o
-.PHONY : kernel/avx2/kernel_dgemm_8x8_lib4.o
-
-# target to build an object file
-kernel/avx2/kernel_dgemm_8x8_lib4.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemm_8x8_lib4.S.o
-.PHONY : kernel/avx2/kernel_dgemm_8x8_lib4.S.o
-
-kernel/avx2/kernel_dgemv_4_lib4.o: kernel/avx2/kernel_dgemv_4_lib4.S.o
-.PHONY : kernel/avx2/kernel_dgemv_4_lib4.o
-
-# target to build an object file
-kernel/avx2/kernel_dgemv_4_lib4.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemv_4_lib4.S.o
-.PHONY : kernel/avx2/kernel_dgemv_4_lib4.S.o
-
-kernel/avx2/kernel_dgemv_8_lib4.o: kernel/avx2/kernel_dgemv_8_lib4.S.o
-.PHONY : kernel/avx2/kernel_dgemv_8_lib4.o
-
-# target to build an object file
-kernel/avx2/kernel_dgemv_8_lib4.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemv_8_lib4.S.o
-.PHONY : kernel/avx2/kernel_dgemv_8_lib4.S.o
-
-kernel/avx2/kernel_dger_lib4.o: kernel/avx2/kernel_dger_lib4.S.o
-.PHONY : kernel/avx2/kernel_dger_lib4.o
-
-# target to build an object file
-kernel/avx2/kernel_dger_lib4.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dger_lib4.S.o
-.PHONY : kernel/avx2/kernel_dger_lib4.S.o
-
-kernel/avx2/kernel_dgetr_lib4.o: kernel/avx2/kernel_dgetr_lib4.c.o
-.PHONY : kernel/avx2/kernel_dgetr_lib4.o
-
-# target to build an object file
-kernel/avx2/kernel_dgetr_lib4.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgetr_lib4.c.o
-.PHONY : kernel/avx2/kernel_dgetr_lib4.c.o
-
-kernel/avx2/kernel_dgetr_lib4.i: kernel/avx2/kernel_dgetr_lib4.c.i
-.PHONY : kernel/avx2/kernel_dgetr_lib4.i
-
-# target to preprocess a source file
-kernel/avx2/kernel_dgetr_lib4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgetr_lib4.c.i
-.PHONY : kernel/avx2/kernel_dgetr_lib4.c.i
-
-kernel/avx2/kernel_dgetr_lib4.s: kernel/avx2/kernel_dgetr_lib4.c.s
-.PHONY : kernel/avx2/kernel_dgetr_lib4.s
-
-# target to generate assembly for a file
-kernel/avx2/kernel_dgetr_lib4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgetr_lib4.c.s
-.PHONY : kernel/avx2/kernel_dgetr_lib4.c.s
-
-kernel/avx2/kernel_dgetrf_pivot_lib4.o: kernel/avx2/kernel_dgetrf_pivot_lib4.c.o
-.PHONY : kernel/avx2/kernel_dgetrf_pivot_lib4.o
-
-# target to build an object file
-kernel/avx2/kernel_dgetrf_pivot_lib4.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgetrf_pivot_lib4.c.o
-.PHONY : kernel/avx2/kernel_dgetrf_pivot_lib4.c.o
-
-kernel/avx2/kernel_dgetrf_pivot_lib4.i: kernel/avx2/kernel_dgetrf_pivot_lib4.c.i
-.PHONY : kernel/avx2/kernel_dgetrf_pivot_lib4.i
-
-# target to preprocess a source file
-kernel/avx2/kernel_dgetrf_pivot_lib4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgetrf_pivot_lib4.c.i
-.PHONY : kernel/avx2/kernel_dgetrf_pivot_lib4.c.i
-
-kernel/avx2/kernel_dgetrf_pivot_lib4.s: kernel/avx2/kernel_dgetrf_pivot_lib4.c.s
-.PHONY : kernel/avx2/kernel_dgetrf_pivot_lib4.s
-
-# target to generate assembly for a file
-kernel/avx2/kernel_dgetrf_pivot_lib4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgetrf_pivot_lib4.c.s
-.PHONY : kernel/avx2/kernel_dgetrf_pivot_lib4.c.s
-
-kernel/avx2/kernel_dsymv_6_lib4.o: kernel/avx2/kernel_dsymv_6_lib4.S.o
-.PHONY : kernel/avx2/kernel_dsymv_6_lib4.o
-
-# target to build an object file
-kernel/avx2/kernel_dsymv_6_lib4.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dsymv_6_lib4.S.o
-.PHONY : kernel/avx2/kernel_dsymv_6_lib4.S.o
-
-kernel/avx2/kernel_sgemm_16x4_lib8.o: kernel/avx2/kernel_sgemm_16x4_lib8.S.o
-.PHONY : kernel/avx2/kernel_sgemm_16x4_lib8.o
-
-# target to build an object file
-kernel/avx2/kernel_sgemm_16x4_lib8.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx2/kernel_sgemm_16x4_lib8.S.o
-.PHONY : kernel/avx2/kernel_sgemm_16x4_lib8.S.o
-
-kernel/avx2/kernel_sgemm_24x4_lib8.o: kernel/avx2/kernel_sgemm_24x4_lib8.S.o
-.PHONY : kernel/avx2/kernel_sgemm_24x4_lib8.o
-
-# target to build an object file
-kernel/avx2/kernel_sgemm_24x4_lib8.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx2/kernel_sgemm_24x4_lib8.S.o
-.PHONY : kernel/avx2/kernel_sgemm_24x4_lib8.S.o
-
-kernel/avx2/kernel_sgemm_8x4_lib8.o: kernel/avx2/kernel_sgemm_8x4_lib8.S.o
-.PHONY : kernel/avx2/kernel_sgemm_8x4_lib8.o
-
-# target to build an object file
-kernel/avx2/kernel_sgemm_8x4_lib8.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx2/kernel_sgemm_8x4_lib8.S.o
-.PHONY : kernel/avx2/kernel_sgemm_8x4_lib8.S.o
-
-kernel/avx2/kernel_sgemm_8x8_lib8.o: kernel/avx2/kernel_sgemm_8x8_lib8.S.o
-.PHONY : kernel/avx2/kernel_sgemm_8x8_lib8.o
-
-# target to build an object file
-kernel/avx2/kernel_sgemm_8x8_lib8.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/avx2/kernel_sgemm_8x8_lib8.S.o
-.PHONY : kernel/avx2/kernel_sgemm_8x8_lib8.S.o
+kernel/generic/kernel_align_generic.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_align_generic.c.s
+.PHONY : kernel/generic/kernel_align_generic.c.s
 
 kernel/generic/kernel_daxpy_lib.o: kernel/generic/kernel_daxpy_lib.c.o
 .PHONY : kernel/generic/kernel_daxpy_lib.o
@@ -2551,6 +2383,78 @@ kernel/generic/kernel_ddot_lib.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_ddot_lib.c.s
 .PHONY : kernel/generic/kernel_ddot_lib.c.s
 
+kernel/generic/kernel_dgecp_lib4.o: kernel/generic/kernel_dgecp_lib4.c.o
+.PHONY : kernel/generic/kernel_dgecp_lib4.o
+
+# target to build an object file
+kernel/generic/kernel_dgecp_lib4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgecp_lib4.c.o
+.PHONY : kernel/generic/kernel_dgecp_lib4.c.o
+
+kernel/generic/kernel_dgecp_lib4.i: kernel/generic/kernel_dgecp_lib4.c.i
+.PHONY : kernel/generic/kernel_dgecp_lib4.i
+
+# target to preprocess a source file
+kernel/generic/kernel_dgecp_lib4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgecp_lib4.c.i
+.PHONY : kernel/generic/kernel_dgecp_lib4.c.i
+
+kernel/generic/kernel_dgecp_lib4.s: kernel/generic/kernel_dgecp_lib4.c.s
+.PHONY : kernel/generic/kernel_dgecp_lib4.s
+
+# target to generate assembly for a file
+kernel/generic/kernel_dgecp_lib4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgecp_lib4.c.s
+.PHONY : kernel/generic/kernel_dgecp_lib4.c.s
+
+kernel/generic/kernel_dgemm_4x4_lib4.o: kernel/generic/kernel_dgemm_4x4_lib4.c.o
+.PHONY : kernel/generic/kernel_dgemm_4x4_lib4.o
+
+# target to build an object file
+kernel/generic/kernel_dgemm_4x4_lib4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgemm_4x4_lib4.c.o
+.PHONY : kernel/generic/kernel_dgemm_4x4_lib4.c.o
+
+kernel/generic/kernel_dgemm_4x4_lib4.i: kernel/generic/kernel_dgemm_4x4_lib4.c.i
+.PHONY : kernel/generic/kernel_dgemm_4x4_lib4.i
+
+# target to preprocess a source file
+kernel/generic/kernel_dgemm_4x4_lib4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgemm_4x4_lib4.c.i
+.PHONY : kernel/generic/kernel_dgemm_4x4_lib4.c.i
+
+kernel/generic/kernel_dgemm_4x4_lib4.s: kernel/generic/kernel_dgemm_4x4_lib4.c.s
+.PHONY : kernel/generic/kernel_dgemm_4x4_lib4.s
+
+# target to generate assembly for a file
+kernel/generic/kernel_dgemm_4x4_lib4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgemm_4x4_lib4.c.s
+.PHONY : kernel/generic/kernel_dgemm_4x4_lib4.c.s
+
+kernel/generic/kernel_dgemm_diag_lib4.o: kernel/generic/kernel_dgemm_diag_lib4.c.o
+.PHONY : kernel/generic/kernel_dgemm_diag_lib4.o
+
+# target to build an object file
+kernel/generic/kernel_dgemm_diag_lib4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgemm_diag_lib4.c.o
+.PHONY : kernel/generic/kernel_dgemm_diag_lib4.c.o
+
+kernel/generic/kernel_dgemm_diag_lib4.i: kernel/generic/kernel_dgemm_diag_lib4.c.i
+.PHONY : kernel/generic/kernel_dgemm_diag_lib4.i
+
+# target to preprocess a source file
+kernel/generic/kernel_dgemm_diag_lib4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgemm_diag_lib4.c.i
+.PHONY : kernel/generic/kernel_dgemm_diag_lib4.c.i
+
+kernel/generic/kernel_dgemm_diag_lib4.s: kernel/generic/kernel_dgemm_diag_lib4.c.s
+.PHONY : kernel/generic/kernel_dgemm_diag_lib4.s
+
+# target to generate assembly for a file
+kernel/generic/kernel_dgemm_diag_lib4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgemm_diag_lib4.c.s
+.PHONY : kernel/generic/kernel_dgemm_diag_lib4.c.s
+
 kernel/generic/kernel_dgemv_4_lib4.o: kernel/generic/kernel_dgemv_4_lib4.c.o
 .PHONY : kernel/generic/kernel_dgemv_4_lib4.o
 
@@ -2574,6 +2478,30 @@ kernel/generic/kernel_dgemv_4_lib4.s: kernel/generic/kernel_dgemv_4_lib4.c.s
 kernel/generic/kernel_dgemv_4_lib4.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgemv_4_lib4.c.s
 .PHONY : kernel/generic/kernel_dgemv_4_lib4.c.s
+
+kernel/generic/kernel_dgeqrf_4_lib4.o: kernel/generic/kernel_dgeqrf_4_lib4.c.o
+.PHONY : kernel/generic/kernel_dgeqrf_4_lib4.o
+
+# target to build an object file
+kernel/generic/kernel_dgeqrf_4_lib4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgeqrf_4_lib4.c.o
+.PHONY : kernel/generic/kernel_dgeqrf_4_lib4.c.o
+
+kernel/generic/kernel_dgeqrf_4_lib4.i: kernel/generic/kernel_dgeqrf_4_lib4.c.i
+.PHONY : kernel/generic/kernel_dgeqrf_4_lib4.i
+
+# target to preprocess a source file
+kernel/generic/kernel_dgeqrf_4_lib4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgeqrf_4_lib4.c.i
+.PHONY : kernel/generic/kernel_dgeqrf_4_lib4.c.i
+
+kernel/generic/kernel_dgeqrf_4_lib4.s: kernel/generic/kernel_dgeqrf_4_lib4.c.s
+.PHONY : kernel/generic/kernel_dgeqrf_4_lib4.s
+
+# target to generate assembly for a file
+kernel/generic/kernel_dgeqrf_4_lib4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgeqrf_4_lib4.c.s
+.PHONY : kernel/generic/kernel_dgeqrf_4_lib4.c.s
 
 kernel/generic/kernel_dger_lib4.o: kernel/generic/kernel_dger_lib4.c.o
 .PHONY : kernel/generic/kernel_dger_lib4.o
@@ -2599,6 +2527,78 @@ kernel/generic/kernel_dger_lib4.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dger_lib4.c.s
 .PHONY : kernel/generic/kernel_dger_lib4.c.s
 
+kernel/generic/kernel_dgetr_lib.o: kernel/generic/kernel_dgetr_lib.c.o
+.PHONY : kernel/generic/kernel_dgetr_lib.o
+
+# target to build an object file
+kernel/generic/kernel_dgetr_lib.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgetr_lib.c.o
+.PHONY : kernel/generic/kernel_dgetr_lib.c.o
+
+kernel/generic/kernel_dgetr_lib.i: kernel/generic/kernel_dgetr_lib.c.i
+.PHONY : kernel/generic/kernel_dgetr_lib.i
+
+# target to preprocess a source file
+kernel/generic/kernel_dgetr_lib.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgetr_lib.c.i
+.PHONY : kernel/generic/kernel_dgetr_lib.c.i
+
+kernel/generic/kernel_dgetr_lib.s: kernel/generic/kernel_dgetr_lib.c.s
+.PHONY : kernel/generic/kernel_dgetr_lib.s
+
+# target to generate assembly for a file
+kernel/generic/kernel_dgetr_lib.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgetr_lib.c.s
+.PHONY : kernel/generic/kernel_dgetr_lib.c.s
+
+kernel/generic/kernel_dgetr_lib4.o: kernel/generic/kernel_dgetr_lib4.c.o
+.PHONY : kernel/generic/kernel_dgetr_lib4.o
+
+# target to build an object file
+kernel/generic/kernel_dgetr_lib4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgetr_lib4.c.o
+.PHONY : kernel/generic/kernel_dgetr_lib4.c.o
+
+kernel/generic/kernel_dgetr_lib4.i: kernel/generic/kernel_dgetr_lib4.c.i
+.PHONY : kernel/generic/kernel_dgetr_lib4.i
+
+# target to preprocess a source file
+kernel/generic/kernel_dgetr_lib4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgetr_lib4.c.i
+.PHONY : kernel/generic/kernel_dgetr_lib4.c.i
+
+kernel/generic/kernel_dgetr_lib4.s: kernel/generic/kernel_dgetr_lib4.c.s
+.PHONY : kernel/generic/kernel_dgetr_lib4.s
+
+# target to generate assembly for a file
+kernel/generic/kernel_dgetr_lib4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgetr_lib4.c.s
+.PHONY : kernel/generic/kernel_dgetr_lib4.c.s
+
+kernel/generic/kernel_dgetrf_pivot_lib4.o: kernel/generic/kernel_dgetrf_pivot_lib4.c.o
+.PHONY : kernel/generic/kernel_dgetrf_pivot_lib4.o
+
+# target to build an object file
+kernel/generic/kernel_dgetrf_pivot_lib4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgetrf_pivot_lib4.c.o
+.PHONY : kernel/generic/kernel_dgetrf_pivot_lib4.c.o
+
+kernel/generic/kernel_dgetrf_pivot_lib4.i: kernel/generic/kernel_dgetrf_pivot_lib4.c.i
+.PHONY : kernel/generic/kernel_dgetrf_pivot_lib4.i
+
+# target to preprocess a source file
+kernel/generic/kernel_dgetrf_pivot_lib4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgetrf_pivot_lib4.c.i
+.PHONY : kernel/generic/kernel_dgetrf_pivot_lib4.c.i
+
+kernel/generic/kernel_dgetrf_pivot_lib4.s: kernel/generic/kernel_dgetrf_pivot_lib4.c.s
+.PHONY : kernel/generic/kernel_dgetrf_pivot_lib4.s
+
+# target to generate assembly for a file
+kernel/generic/kernel_dgetrf_pivot_lib4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgetrf_pivot_lib4.c.s
+.PHONY : kernel/generic/kernel_dgetrf_pivot_lib4.c.s
+
 kernel/generic/kernel_dpack_buffer_lib4.o: kernel/generic/kernel_dpack_buffer_lib4.c.o
 .PHONY : kernel/generic/kernel_dpack_buffer_lib4.o
 
@@ -2622,6 +2622,30 @@ kernel/generic/kernel_dpack_buffer_lib4.s: kernel/generic/kernel_dpack_buffer_li
 kernel/generic/kernel_dpack_buffer_lib4.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dpack_buffer_lib4.c.s
 .PHONY : kernel/generic/kernel_dpack_buffer_lib4.c.s
+
+kernel/generic/kernel_dpack_lib4.o: kernel/generic/kernel_dpack_lib4.c.o
+.PHONY : kernel/generic/kernel_dpack_lib4.o
+
+# target to build an object file
+kernel/generic/kernel_dpack_lib4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dpack_lib4.c.o
+.PHONY : kernel/generic/kernel_dpack_lib4.c.o
+
+kernel/generic/kernel_dpack_lib4.i: kernel/generic/kernel_dpack_lib4.c.i
+.PHONY : kernel/generic/kernel_dpack_lib4.i
+
+# target to preprocess a source file
+kernel/generic/kernel_dpack_lib4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dpack_lib4.c.i
+.PHONY : kernel/generic/kernel_dpack_lib4.c.i
+
+kernel/generic/kernel_dpack_lib4.s: kernel/generic/kernel_dpack_lib4.c.s
+.PHONY : kernel/generic/kernel_dpack_lib4.s
+
+# target to generate assembly for a file
+kernel/generic/kernel_dpack_lib4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_dpack_lib4.c.s
+.PHONY : kernel/generic/kernel_dpack_lib4.c.s
 
 kernel/generic/kernel_dsymv_4_lib4.o: kernel/generic/kernel_dsymv_4_lib4.c.o
 .PHONY : kernel/generic/kernel_dsymv_4_lib4.o
@@ -2695,6 +2719,30 @@ kernel/generic/kernel_sdot_lib.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_sdot_lib.c.s
 .PHONY : kernel/generic/kernel_sdot_lib.c.s
 
+kernel/generic/kernel_sgecp_lib4.o: kernel/generic/kernel_sgecp_lib4.c.o
+.PHONY : kernel/generic/kernel_sgecp_lib4.o
+
+# target to build an object file
+kernel/generic/kernel_sgecp_lib4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgecp_lib4.c.o
+.PHONY : kernel/generic/kernel_sgecp_lib4.c.o
+
+kernel/generic/kernel_sgecp_lib4.i: kernel/generic/kernel_sgecp_lib4.c.i
+.PHONY : kernel/generic/kernel_sgecp_lib4.i
+
+# target to preprocess a source file
+kernel/generic/kernel_sgecp_lib4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgecp_lib4.c.i
+.PHONY : kernel/generic/kernel_sgecp_lib4.c.i
+
+kernel/generic/kernel_sgecp_lib4.s: kernel/generic/kernel_sgecp_lib4.c.s
+.PHONY : kernel/generic/kernel_sgecp_lib4.s
+
+# target to generate assembly for a file
+kernel/generic/kernel_sgecp_lib4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgecp_lib4.c.s
+.PHONY : kernel/generic/kernel_sgecp_lib4.c.s
+
 kernel/generic/kernel_sgemm_4x4_lib4.o: kernel/generic/kernel_sgemm_4x4_lib4.c.o
 .PHONY : kernel/generic/kernel_sgemm_4x4_lib4.o
 
@@ -2719,29 +2767,101 @@ kernel/generic/kernel_sgemm_4x4_lib4.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgemm_4x4_lib4.c.s
 .PHONY : kernel/generic/kernel_sgemm_4x4_lib4.c.s
 
-kernel/generic/kernel_sgemm_8x4_lib8.o: kernel/generic/kernel_sgemm_8x4_lib8.c.o
-.PHONY : kernel/generic/kernel_sgemm_8x4_lib8.o
+kernel/generic/kernel_sgemm_diag_lib4.o: kernel/generic/kernel_sgemm_diag_lib4.c.o
+.PHONY : kernel/generic/kernel_sgemm_diag_lib4.o
 
 # target to build an object file
-kernel/generic/kernel_sgemm_8x4_lib8.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgemm_8x4_lib8.c.o
-.PHONY : kernel/generic/kernel_sgemm_8x4_lib8.c.o
+kernel/generic/kernel_sgemm_diag_lib4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgemm_diag_lib4.c.o
+.PHONY : kernel/generic/kernel_sgemm_diag_lib4.c.o
 
-kernel/generic/kernel_sgemm_8x4_lib8.i: kernel/generic/kernel_sgemm_8x4_lib8.c.i
-.PHONY : kernel/generic/kernel_sgemm_8x4_lib8.i
+kernel/generic/kernel_sgemm_diag_lib4.i: kernel/generic/kernel_sgemm_diag_lib4.c.i
+.PHONY : kernel/generic/kernel_sgemm_diag_lib4.i
 
 # target to preprocess a source file
-kernel/generic/kernel_sgemm_8x4_lib8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgemm_8x4_lib8.c.i
-.PHONY : kernel/generic/kernel_sgemm_8x4_lib8.c.i
+kernel/generic/kernel_sgemm_diag_lib4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgemm_diag_lib4.c.i
+.PHONY : kernel/generic/kernel_sgemm_diag_lib4.c.i
 
-kernel/generic/kernel_sgemm_8x4_lib8.s: kernel/generic/kernel_sgemm_8x4_lib8.c.s
-.PHONY : kernel/generic/kernel_sgemm_8x4_lib8.s
+kernel/generic/kernel_sgemm_diag_lib4.s: kernel/generic/kernel_sgemm_diag_lib4.c.s
+.PHONY : kernel/generic/kernel_sgemm_diag_lib4.s
 
 # target to generate assembly for a file
-kernel/generic/kernel_sgemm_8x4_lib8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgemm_8x4_lib8.c.s
-.PHONY : kernel/generic/kernel_sgemm_8x4_lib8.c.s
+kernel/generic/kernel_sgemm_diag_lib4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgemm_diag_lib4.c.s
+.PHONY : kernel/generic/kernel_sgemm_diag_lib4.c.s
+
+kernel/generic/kernel_sgemv_4_lib4.o: kernel/generic/kernel_sgemv_4_lib4.c.o
+.PHONY : kernel/generic/kernel_sgemv_4_lib4.o
+
+# target to build an object file
+kernel/generic/kernel_sgemv_4_lib4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgemv_4_lib4.c.o
+.PHONY : kernel/generic/kernel_sgemv_4_lib4.c.o
+
+kernel/generic/kernel_sgemv_4_lib4.i: kernel/generic/kernel_sgemv_4_lib4.c.i
+.PHONY : kernel/generic/kernel_sgemv_4_lib4.i
+
+# target to preprocess a source file
+kernel/generic/kernel_sgemv_4_lib4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgemv_4_lib4.c.i
+.PHONY : kernel/generic/kernel_sgemv_4_lib4.c.i
+
+kernel/generic/kernel_sgemv_4_lib4.s: kernel/generic/kernel_sgemv_4_lib4.c.s
+.PHONY : kernel/generic/kernel_sgemv_4_lib4.s
+
+# target to generate assembly for a file
+kernel/generic/kernel_sgemv_4_lib4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgemv_4_lib4.c.s
+.PHONY : kernel/generic/kernel_sgemv_4_lib4.c.s
+
+kernel/generic/kernel_sgetr_lib4.o: kernel/generic/kernel_sgetr_lib4.c.o
+.PHONY : kernel/generic/kernel_sgetr_lib4.o
+
+# target to build an object file
+kernel/generic/kernel_sgetr_lib4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgetr_lib4.c.o
+.PHONY : kernel/generic/kernel_sgetr_lib4.c.o
+
+kernel/generic/kernel_sgetr_lib4.i: kernel/generic/kernel_sgetr_lib4.c.i
+.PHONY : kernel/generic/kernel_sgetr_lib4.i
+
+# target to preprocess a source file
+kernel/generic/kernel_sgetr_lib4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgetr_lib4.c.i
+.PHONY : kernel/generic/kernel_sgetr_lib4.c.i
+
+kernel/generic/kernel_sgetr_lib4.s: kernel/generic/kernel_sgetr_lib4.c.s
+.PHONY : kernel/generic/kernel_sgetr_lib4.s
+
+# target to generate assembly for a file
+kernel/generic/kernel_sgetr_lib4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgetr_lib4.c.s
+.PHONY : kernel/generic/kernel_sgetr_lib4.c.s
+
+kernel/generic/kernel_sgetrf_pivot_lib4.o: kernel/generic/kernel_sgetrf_pivot_lib4.c.o
+.PHONY : kernel/generic/kernel_sgetrf_pivot_lib4.o
+
+# target to build an object file
+kernel/generic/kernel_sgetrf_pivot_lib4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgetrf_pivot_lib4.c.o
+.PHONY : kernel/generic/kernel_sgetrf_pivot_lib4.c.o
+
+kernel/generic/kernel_sgetrf_pivot_lib4.i: kernel/generic/kernel_sgetrf_pivot_lib4.c.i
+.PHONY : kernel/generic/kernel_sgetrf_pivot_lib4.i
+
+# target to preprocess a source file
+kernel/generic/kernel_sgetrf_pivot_lib4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgetrf_pivot_lib4.c.i
+.PHONY : kernel/generic/kernel_sgetrf_pivot_lib4.c.i
+
+kernel/generic/kernel_sgetrf_pivot_lib4.s: kernel/generic/kernel_sgetrf_pivot_lib4.c.s
+.PHONY : kernel/generic/kernel_sgetrf_pivot_lib4.s
+
+# target to generate assembly for a file
+kernel/generic/kernel_sgetrf_pivot_lib4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgetrf_pivot_lib4.c.s
+.PHONY : kernel/generic/kernel_sgetrf_pivot_lib4.c.s
 
 kernel/generic/kernel_spack_lib4.o: kernel/generic/kernel_spack_lib4.c.o
 .PHONY : kernel/generic/kernel_spack_lib4.o
@@ -2767,13 +2887,29 @@ kernel/generic/kernel_spack_lib4.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_spack_lib4.c.s
 .PHONY : kernel/generic/kernel_spack_lib4.c.s
 
-kernel/sse3/kernel_align_x64.o: kernel/sse3/kernel_align_x64.S.o
-.PHONY : kernel/sse3/kernel_align_x64.o
+kernel/generic/kernel_ssymv_4_lib4.o: kernel/generic/kernel_ssymv_4_lib4.c.o
+.PHONY : kernel/generic/kernel_ssymv_4_lib4.o
 
 # target to build an object file
-kernel/sse3/kernel_align_x64.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/sse3/kernel_align_x64.S.o
-.PHONY : kernel/sse3/kernel_align_x64.S.o
+kernel/generic/kernel_ssymv_4_lib4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_ssymv_4_lib4.c.o
+.PHONY : kernel/generic/kernel_ssymv_4_lib4.c.o
+
+kernel/generic/kernel_ssymv_4_lib4.i: kernel/generic/kernel_ssymv_4_lib4.c.i
+.PHONY : kernel/generic/kernel_ssymv_4_lib4.i
+
+# target to preprocess a source file
+kernel/generic/kernel_ssymv_4_lib4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_ssymv_4_lib4.c.i
+.PHONY : kernel/generic/kernel_ssymv_4_lib4.c.i
+
+kernel/generic/kernel_ssymv_4_lib4.s: kernel/generic/kernel_ssymv_4_lib4.c.s
+.PHONY : kernel/generic/kernel_ssymv_4_lib4.s
+
+# target to generate assembly for a file
+kernel/generic/kernel_ssymv_4_lib4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blasfeo.dir/build.make CMakeFiles/blasfeo.dir/kernel/generic/kernel_ssymv_4_lib4.c.s
+.PHONY : kernel/generic/kernel_ssymv_4_lib4.c.s
 
 # Help Target
 help:
@@ -2818,9 +2954,9 @@ help:
 	@echo "... auxiliary/i_aux_ext_dep_lib.o"
 	@echo "... auxiliary/i_aux_ext_dep_lib.i"
 	@echo "... auxiliary/i_aux_ext_dep_lib.s"
-	@echo "... auxiliary/m_aux_lib48.o"
-	@echo "... auxiliary/m_aux_lib48.i"
-	@echo "... auxiliary/m_aux_lib48.s"
+	@echo "... auxiliary/m_aux_lib44.o"
+	@echo "... auxiliary/m_aux_lib44.i"
+	@echo "... auxiliary/m_aux_lib44.s"
 	@echo "... auxiliary/memory.o"
 	@echo "... auxiliary/memory.i"
 	@echo "... auxiliary/memory.s"
@@ -2833,9 +2969,9 @@ help:
 	@echo "... auxiliary/s_aux_ext_dep_common.o"
 	@echo "... auxiliary/s_aux_ext_dep_common.i"
 	@echo "... auxiliary/s_aux_ext_dep_common.s"
-	@echo "... auxiliary/s_aux_lib8.o"
-	@echo "... auxiliary/s_aux_lib8.i"
-	@echo "... auxiliary/s_aux_lib8.s"
+	@echo "... auxiliary/s_aux_lib4.o"
+	@echo "... auxiliary/s_aux_lib4.i"
+	@echo "... auxiliary/s_aux_lib4.s"
 	@echo "... auxiliary/s_aux_ref.o"
 	@echo "... auxiliary/s_aux_ref.i"
 	@echo "... auxiliary/s_aux_ref.s"
@@ -2980,24 +3116,24 @@ help:
 	@echo "... blasfeo_hp_pm/d_lapack_lib4.o"
 	@echo "... blasfeo_hp_pm/d_lapack_lib4.i"
 	@echo "... blasfeo_hp_pm/d_lapack_lib4.s"
-	@echo "... blasfeo_hp_pm/s_blas1_lib8.o"
-	@echo "... blasfeo_hp_pm/s_blas1_lib8.i"
-	@echo "... blasfeo_hp_pm/s_blas1_lib8.s"
+	@echo "... blasfeo_hp_pm/s_blas1_lib4.o"
+	@echo "... blasfeo_hp_pm/s_blas1_lib4.i"
+	@echo "... blasfeo_hp_pm/s_blas1_lib4.s"
 	@echo "... blasfeo_hp_pm/s_blas2_diag_lib.o"
 	@echo "... blasfeo_hp_pm/s_blas2_diag_lib.i"
 	@echo "... blasfeo_hp_pm/s_blas2_diag_lib.s"
-	@echo "... blasfeo_hp_pm/s_blas2_lib8.o"
-	@echo "... blasfeo_hp_pm/s_blas2_lib8.i"
-	@echo "... blasfeo_hp_pm/s_blas2_lib8.s"
-	@echo "... blasfeo_hp_pm/s_blas3_diag_lib8.o"
-	@echo "... blasfeo_hp_pm/s_blas3_diag_lib8.i"
-	@echo "... blasfeo_hp_pm/s_blas3_diag_lib8.s"
-	@echo "... blasfeo_hp_pm/s_blas3_lib8.o"
-	@echo "... blasfeo_hp_pm/s_blas3_lib8.i"
-	@echo "... blasfeo_hp_pm/s_blas3_lib8.s"
-	@echo "... blasfeo_hp_pm/s_lapack_lib8.o"
-	@echo "... blasfeo_hp_pm/s_lapack_lib8.i"
-	@echo "... blasfeo_hp_pm/s_lapack_lib8.s"
+	@echo "... blasfeo_hp_pm/s_blas2_lib4.o"
+	@echo "... blasfeo_hp_pm/s_blas2_lib4.i"
+	@echo "... blasfeo_hp_pm/s_blas2_lib4.s"
+	@echo "... blasfeo_hp_pm/s_blas3_diag_lib4.o"
+	@echo "... blasfeo_hp_pm/s_blas3_diag_lib4.i"
+	@echo "... blasfeo_hp_pm/s_blas3_diag_lib4.s"
+	@echo "... blasfeo_hp_pm/s_blas3_lib4.o"
+	@echo "... blasfeo_hp_pm/s_blas3_lib4.i"
+	@echo "... blasfeo_hp_pm/s_blas3_lib4.s"
+	@echo "... blasfeo_hp_pm/s_lapack_lib4.o"
+	@echo "... blasfeo_hp_pm/s_lapack_lib4.i"
+	@echo "... blasfeo_hp_pm/s_lapack_lib4.s"
 	@echo "... blasfeo_ref/d_blas1_ref.o"
 	@echo "... blasfeo_ref/d_blas1_ref.i"
 	@echo "... blasfeo_ref/d_blas1_ref.s"
@@ -3034,62 +3170,65 @@ help:
 	@echo "... blasfeo_ref/s_lapack_ref.o"
 	@echo "... blasfeo_ref/s_lapack_ref.i"
 	@echo "... blasfeo_ref/s_lapack_ref.s"
-	@echo "... kernel/avx/kernel_d_aux_lib.o"
-	@echo "... kernel/avx/kernel_dgecp_lib4.o"
-	@echo "... kernel/avx/kernel_dgecp_lib4.i"
-	@echo "... kernel/avx/kernel_dgecp_lib4.s"
-	@echo "... kernel/avx/kernel_dgemm_diag_lib4.o"
-	@echo "... kernel/avx/kernel_dgemm_diag_lib4.i"
-	@echo "... kernel/avx/kernel_dgemm_diag_lib4.s"
-	@echo "... kernel/avx/kernel_dgeqrf_4_lib4.o"
-	@echo "... kernel/avx/kernel_dgeqrf_4_lib4.i"
-	@echo "... kernel/avx/kernel_dgeqrf_4_lib4.s"
-	@echo "... kernel/avx/kernel_dgetr_lib.o"
-	@echo "... kernel/avx/kernel_dpack_lib4.o"
-	@echo "... kernel/avx/kernel_sgead_lib8.o"
-	@echo "... kernel/avx/kernel_sgecpsc_lib8.o"
-	@echo "... kernel/avx/kernel_sgemm_diag_lib8.o"
-	@echo "... kernel/avx/kernel_sgemm_diag_lib8.i"
-	@echo "... kernel/avx/kernel_sgemm_diag_lib8.s"
-	@echo "... kernel/avx/kernel_sgemv_4_lib8.o"
-	@echo "... kernel/avx/kernel_sgemv_8_lib8.o"
-	@echo "... kernel/avx/kernel_sgetr_lib8.o"
-	@echo "... kernel/avx/kernel_spack_lib8.o"
-	@echo "... kernel/avx2/kernel_dgebp_lib4.o"
-	@echo "... kernel/avx2/kernel_dgelqf_4_lib4.o"
-	@echo "... kernel/avx2/kernel_dgemm_12x4_lib4.o"
-	@echo "... kernel/avx2/kernel_dgemm_4x4_lib4.o"
-	@echo "... kernel/avx2/kernel_dgemm_8x4_lib4.o"
-	@echo "... kernel/avx2/kernel_dgemm_8x8_lib4.o"
-	@echo "... kernel/avx2/kernel_dgemv_4_lib4.o"
-	@echo "... kernel/avx2/kernel_dgemv_8_lib4.o"
-	@echo "... kernel/avx2/kernel_dger_lib4.o"
-	@echo "... kernel/avx2/kernel_dgetr_lib4.o"
-	@echo "... kernel/avx2/kernel_dgetr_lib4.i"
-	@echo "... kernel/avx2/kernel_dgetr_lib4.s"
-	@echo "... kernel/avx2/kernel_dgetrf_pivot_lib4.o"
-	@echo "... kernel/avx2/kernel_dgetrf_pivot_lib4.i"
-	@echo "... kernel/avx2/kernel_dgetrf_pivot_lib4.s"
-	@echo "... kernel/avx2/kernel_dsymv_6_lib4.o"
-	@echo "... kernel/avx2/kernel_sgemm_16x4_lib8.o"
-	@echo "... kernel/avx2/kernel_sgemm_24x4_lib8.o"
-	@echo "... kernel/avx2/kernel_sgemm_8x4_lib8.o"
-	@echo "... kernel/avx2/kernel_sgemm_8x8_lib8.o"
+	@echo "... kernel/armv8a/kernel_d_aux_lib.o"
+	@echo "... kernel/armv8a/kernel_dgemm_4x4_lib4.o"
+	@echo "... kernel/armv8a/kernel_dgemm_8x4_lib4.o"
+	@echo "... kernel/armv8a/kernel_dgemv_4_lib4.o"
+	@echo "... kernel/armv8a/kernel_dger_lib4.o"
+	@echo "... kernel/armv8a/kernel_dgetr_lib.o"
+	@echo "... kernel/armv8a/kernel_dgetrf_pivot_lib4.o"
+	@echo "... kernel/armv8a/kernel_dgetrf_pivot_lib4.i"
+	@echo "... kernel/armv8a/kernel_dgetrf_pivot_lib4.s"
+	@echo "... kernel/armv8a/kernel_dpack_lib4.o"
+	@echo "... kernel/armv8a/kernel_sgemm_12x4_lib4.o"
+	@echo "... kernel/armv8a/kernel_sgemm_16x4_lib4.o"
+	@echo "... kernel/armv8a/kernel_sgemm_4x4_lib4.o"
+	@echo "... kernel/armv8a/kernel_sgemm_8x4_lib4.o"
+	@echo "... kernel/armv8a/kernel_sgemm_8x8_lib4.o"
+	@echo "... kernel/armv8a/kernel_sgemv_4_lib4.o"
+	@echo "... kernel/armv8a/kernel_spack_lib4.o"
+	@echo "... kernel/generic/kernel_align_generic.o"
+	@echo "... kernel/generic/kernel_align_generic.i"
+	@echo "... kernel/generic/kernel_align_generic.s"
 	@echo "... kernel/generic/kernel_daxpy_lib.o"
 	@echo "... kernel/generic/kernel_daxpy_lib.i"
 	@echo "... kernel/generic/kernel_daxpy_lib.s"
 	@echo "... kernel/generic/kernel_ddot_lib.o"
 	@echo "... kernel/generic/kernel_ddot_lib.i"
 	@echo "... kernel/generic/kernel_ddot_lib.s"
+	@echo "... kernel/generic/kernel_dgecp_lib4.o"
+	@echo "... kernel/generic/kernel_dgecp_lib4.i"
+	@echo "... kernel/generic/kernel_dgecp_lib4.s"
+	@echo "... kernel/generic/kernel_dgemm_4x4_lib4.o"
+	@echo "... kernel/generic/kernel_dgemm_4x4_lib4.i"
+	@echo "... kernel/generic/kernel_dgemm_4x4_lib4.s"
+	@echo "... kernel/generic/kernel_dgemm_diag_lib4.o"
+	@echo "... kernel/generic/kernel_dgemm_diag_lib4.i"
+	@echo "... kernel/generic/kernel_dgemm_diag_lib4.s"
 	@echo "... kernel/generic/kernel_dgemv_4_lib4.o"
 	@echo "... kernel/generic/kernel_dgemv_4_lib4.i"
 	@echo "... kernel/generic/kernel_dgemv_4_lib4.s"
+	@echo "... kernel/generic/kernel_dgeqrf_4_lib4.o"
+	@echo "... kernel/generic/kernel_dgeqrf_4_lib4.i"
+	@echo "... kernel/generic/kernel_dgeqrf_4_lib4.s"
 	@echo "... kernel/generic/kernel_dger_lib4.o"
 	@echo "... kernel/generic/kernel_dger_lib4.i"
 	@echo "... kernel/generic/kernel_dger_lib4.s"
+	@echo "... kernel/generic/kernel_dgetr_lib.o"
+	@echo "... kernel/generic/kernel_dgetr_lib.i"
+	@echo "... kernel/generic/kernel_dgetr_lib.s"
+	@echo "... kernel/generic/kernel_dgetr_lib4.o"
+	@echo "... kernel/generic/kernel_dgetr_lib4.i"
+	@echo "... kernel/generic/kernel_dgetr_lib4.s"
+	@echo "... kernel/generic/kernel_dgetrf_pivot_lib4.o"
+	@echo "... kernel/generic/kernel_dgetrf_pivot_lib4.i"
+	@echo "... kernel/generic/kernel_dgetrf_pivot_lib4.s"
 	@echo "... kernel/generic/kernel_dpack_buffer_lib4.o"
 	@echo "... kernel/generic/kernel_dpack_buffer_lib4.i"
 	@echo "... kernel/generic/kernel_dpack_buffer_lib4.s"
+	@echo "... kernel/generic/kernel_dpack_lib4.o"
+	@echo "... kernel/generic/kernel_dpack_lib4.i"
+	@echo "... kernel/generic/kernel_dpack_lib4.s"
 	@echo "... kernel/generic/kernel_dsymv_4_lib4.o"
 	@echo "... kernel/generic/kernel_dsymv_4_lib4.i"
 	@echo "... kernel/generic/kernel_dsymv_4_lib4.s"
@@ -3099,16 +3238,30 @@ help:
 	@echo "... kernel/generic/kernel_sdot_lib.o"
 	@echo "... kernel/generic/kernel_sdot_lib.i"
 	@echo "... kernel/generic/kernel_sdot_lib.s"
+	@echo "... kernel/generic/kernel_sgecp_lib4.o"
+	@echo "... kernel/generic/kernel_sgecp_lib4.i"
+	@echo "... kernel/generic/kernel_sgecp_lib4.s"
 	@echo "... kernel/generic/kernel_sgemm_4x4_lib4.o"
 	@echo "... kernel/generic/kernel_sgemm_4x4_lib4.i"
 	@echo "... kernel/generic/kernel_sgemm_4x4_lib4.s"
-	@echo "... kernel/generic/kernel_sgemm_8x4_lib8.o"
-	@echo "... kernel/generic/kernel_sgemm_8x4_lib8.i"
-	@echo "... kernel/generic/kernel_sgemm_8x4_lib8.s"
+	@echo "... kernel/generic/kernel_sgemm_diag_lib4.o"
+	@echo "... kernel/generic/kernel_sgemm_diag_lib4.i"
+	@echo "... kernel/generic/kernel_sgemm_diag_lib4.s"
+	@echo "... kernel/generic/kernel_sgemv_4_lib4.o"
+	@echo "... kernel/generic/kernel_sgemv_4_lib4.i"
+	@echo "... kernel/generic/kernel_sgemv_4_lib4.s"
+	@echo "... kernel/generic/kernel_sgetr_lib4.o"
+	@echo "... kernel/generic/kernel_sgetr_lib4.i"
+	@echo "... kernel/generic/kernel_sgetr_lib4.s"
+	@echo "... kernel/generic/kernel_sgetrf_pivot_lib4.o"
+	@echo "... kernel/generic/kernel_sgetrf_pivot_lib4.i"
+	@echo "... kernel/generic/kernel_sgetrf_pivot_lib4.s"
 	@echo "... kernel/generic/kernel_spack_lib4.o"
 	@echo "... kernel/generic/kernel_spack_lib4.i"
 	@echo "... kernel/generic/kernel_spack_lib4.s"
-	@echo "... kernel/sse3/kernel_align_x64.o"
+	@echo "... kernel/generic/kernel_ssymv_4_lib4.o"
+	@echo "... kernel/generic/kernel_ssymv_4_lib4.i"
+	@echo "... kernel/generic/kernel_ssymv_4_lib4.s"
 .PHONY : help
 
 

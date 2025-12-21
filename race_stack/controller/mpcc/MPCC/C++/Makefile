@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/misys/forza_ws/race_stack/controller/mpcc/MPCC/C++
+CMAKE_SOURCE_DIR = /home/misys/f1tenth_ws/src/MPCC/C++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/misys/forza_ws/race_stack/controller/mpcc/MPCC/C++
+CMAKE_BINARY_DIR = /home/misys/f1tenth_ws/src/MPCC/C++
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/misys/forza_ws/race_stack/controller/mpcc/MPCC/C++/CMakeFiles /home/misys/forza_ws/race_stack/controller/mpcc/MPCC/C++//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/misys/f1tenth_ws/src/MPCC/C++/CMakeFiles /home/misys/f1tenth_ws/src/MPCC/C++//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/misys/forza_ws/race_stack/controller/mpcc/MPCC/C++/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/misys/f1tenth_ws/src/MPCC/C++/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

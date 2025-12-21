@@ -240,11 +240,10 @@ hpipm_size_t OCP_QP_RES_WS_MEMSIZE(struct OCP_QP_DIM *dim)
 
 	hpipm_size_t size = 0;
 
-	size += 4*sizeof(struct STRVEC); // 2*tmp_nbgM tmp_nsM tmp_lam_mask
+	size += 3*sizeof(struct STRVEC); // 2*tmp_nbgM tmp_nsM
 
 	size += 2*SIZE_STRVEC(nbM+ngM); // tmp_nbgM
 	size += 1*SIZE_STRVEC(nsM); // tmp_nsM
-	size += 1*SIZE_STRVEC(2*nbM+2*ngM+2*nsM); // tmp_lam_mask
 
 	size = (size+63)/64*64; // make multiple of typical cache line size
 	size += 1*64; // align once to typical cache line size
@@ -296,8 +295,6 @@ void OCP_QP_RES_WS_CREATE(struct OCP_QP_DIM *dim, struct OCP_QP_RES_WS *ws, void
 	sv_ptr += 2;
 	ws->tmp_nsM = sv_ptr;
 	sv_ptr += 1;
-	ws->tmp_lam_mask = sv_ptr;
-	sv_ptr += 1;
 
 
 	// align to typical cache line size
@@ -308,6 +305,7 @@ void OCP_QP_RES_WS_CREATE(struct OCP_QP_DIM *dim, struct OCP_QP_RES_WS *ws, void
 	// void stuf
 	char *c_ptr = (char *) s_ptr;
 
+
 	CREATE_STRVEC(nbM+ngM, ws->tmp_nbgM+0, c_ptr);
 	c_ptr += (ws->tmp_nbgM+0)->memsize;
 
@@ -316,11 +314,6 @@ void OCP_QP_RES_WS_CREATE(struct OCP_QP_DIM *dim, struct OCP_QP_RES_WS *ws, void
 
 	CREATE_STRVEC(nsM, ws->tmp_nsM+0, c_ptr);
 	c_ptr += (ws->tmp_nsM+0)->memsize;
-
-	CREATE_STRVEC(2*nbM+2*ngM+2*nsM, ws->tmp_lam_mask, c_ptr);
-	c_ptr += (ws->tmp_lam_mask)->memsize;
-
-	ws->valid_nc_mask = 0;
 
 	ws->memsize = memsize; //OCP_QP_RES_WS_MEMSIZE(dim);
 
@@ -368,7 +361,6 @@ void OCP_QP_RES_COMPUTE(struct OCP_QP *qp, struct OCP_QP_SOL *qp_sol, struct OCP
 	struct STRVEC *b = qp->b;
 	struct STRVEC *rqz = qp->rqz;
 	struct STRVEC *d = qp->d;
-	struct STRVEC *d_mask = qp->d_mask;
 	struct STRVEC *m = qp->m;
 	int **idxb = qp->idxb;
 	struct STRVEC *Z = qp->Z;
@@ -386,33 +378,11 @@ void OCP_QP_RES_COMPUTE(struct OCP_QP *qp, struct OCP_QP_SOL *qp_sol, struct OCP
 
 	struct STRVEC *tmp_nbgM = ws->tmp_nbgM;
 	struct STRVEC *tmp_nsM = ws->tmp_nsM;
-	struct STRVEC *tmp_lam_mask = ws->tmp_lam_mask;
 
 	int nx0, nx1, nu0, nu1, nb0, ng0, ns0;
 
 	REAL *obj = &res->obj;
 	REAL *dual_gap = &res->dual_gap;
-
-	int mask_constr = 0;
-	REAL nc_mask_inv = 0.0;
-	if(ws->valid_nc_mask==1)
-		{
-		mask_constr = ws->mask_constr;
-		nc_mask_inv = ws->nc_mask_inv;
-		}
-	else
-		{
-		int nc_mask = 0;
-		for(ii=0; ii<=N; ii++)
-			for(jj=0; jj<2*nb[ii]+2*ng[ii]+2*ns[ii]; jj++)
-				if((d_mask+ii)->pa[jj]==1.0)
-					nc_mask++;
-				else
-					mask_constr = 1; // at least one masked constraint
-		if(nc_mask>0)
-			nc_mask_inv = 1.0/nc_mask;
-		// do not store these in ws, to guard against changes in d_mask
-		}
 
 	//
 	REAL mu = 0.0;
@@ -439,14 +409,9 @@ void OCP_QP_RES_COMPUTE(struct OCP_QP *qp, struct OCP_QP_SOL *qp_sol, struct OCP
 		if(ii>0)
 			AXPY(nx0, -1.0, pi+(ii-1), 0, res_g+ii, nu0, res_g+ii, nu0);
 
-		if(mask_constr)
-			VECMUL(2*nb0+2*ng0+2*ns0, lam+ii, 0, d_mask+ii, 0, tmp_lam_mask, 0);
-		else
-			VECCP(2*nb0+2*ng0+2*ns0, lam+ii, 0, tmp_lam_mask, 0);
-
 		if(nb0+ng0>0)
 			{
-			AXPY(nb0+ng0, -1.0, tmp_lam_mask, 0, tmp_lam_mask, nb0+ng0, tmp_nbgM+0, 0);
+			AXPY(nb0+ng0, -1.0, lam+ii, 0, lam+ii, nb0+ng0, tmp_nbgM+0, 0);
 //			AXPY(nb0+ng0,  1.0, d+ii, 0, t+ii, 0, res_d+ii, 0);
 //			AXPY(nb0+ng0,  1.0, d+ii, nb0+ng0, t+ii, nb0+ng0, res_d+ii, nb0+ng0);
 			AXPY(2*nb0+2*ng0,  1.0, d+ii, 0, t+ii, 0, res_d+ii, 0);
@@ -474,14 +439,14 @@ void OCP_QP_RES_COMPUTE(struct OCP_QP *qp, struct OCP_QP_SOL *qp_sol, struct OCP
 			AXPY(2*ns0, -1.0, rqz+ii, nu0+nx0, res_g+ii, nu0+nx0, res_g+ii, nu0+nx0);
 			*dual_gap += DOT(2*ns0, res_g+ii, nu0+nx0, ux+ii, nu0+nx0);
 
-			AXPY(2*ns0, -1.0, tmp_lam_mask, 2*nb0+2*ng0, res_g+ii, nu0+nx0, res_g+ii, nu0+nx0);
+			AXPY(2*ns0, -1.0, lam+ii, 2*nb0+2*ng0, res_g+ii, nu0+nx0, res_g+ii, nu0+nx0);
 			for(jj=0; jj<nb0+ng0; jj++)
 				{
 				idx = idxs_rev[ii][jj];
 				if(idx!=-1)
 					{
-					BLASFEO_VECEL(res_g+ii, nu0+nx0+idx)     -= BLASFEO_VECEL(tmp_lam_mask, jj);
-					BLASFEO_VECEL(res_g+ii, nu0+nx0+ns0+idx) -= BLASFEO_VECEL(tmp_lam_mask, nb0+ng0+jj);
+					BLASFEO_VECEL(res_g+ii, nu0+nx0+idx)     -= BLASFEO_VECEL(lam+ii, jj);
+					BLASFEO_VECEL(res_g+ii, nu0+nx0+ns0+idx) -= BLASFEO_VECEL(lam+ii, nb0+ng0+jj);
 					// res_d
 					BLASFEO_VECEL(res_d+ii, jj)         -= BLASFEO_VECEL(ux+ii, nu0+nx0+idx);
 					BLASFEO_VECEL(res_d+ii, nb0+ng0+jj) -= BLASFEO_VECEL(ux+ii, nu0+nx0+ns0+idx);
@@ -491,10 +456,8 @@ void OCP_QP_RES_COMPUTE(struct OCP_QP *qp, struct OCP_QP_SOL *qp_sol, struct OCP
 			AXPY(2*ns0, -1.0, ux+ii, nu0+nx0, t+ii, 2*nb0+2*ng0, res_d+ii, 2*nb0+2*ng0);
 			AXPY(2*ns0, 1.0, d+ii, 2*nb0+2*ng0, res_d+ii, 2*nb0+2*ng0, res_d+ii, 2*nb0+2*ng0);
 			}
-		if(mask_constr)
-			VECMUL(2*nb0+2*ng0+2*ns0, d_mask+ii, 0, res_d+ii, 0, res_d+ii, 0);
 
-		*dual_gap -= DOT(2*nb0+2*ng0+2*ns0, d+ii, 0, tmp_lam_mask, 0);
+		*dual_gap -= DOT(2*nb0+2*ng0+2*ns0, d+ii, 0, lam+ii, 0);
 
 		if(ii<N)
 			{
@@ -509,12 +472,8 @@ void OCP_QP_RES_COMPUTE(struct OCP_QP *qp, struct OCP_QP_SOL *qp_sol, struct OCP
 
 			}
 
-		mu += VECMULDOT(2*nb0+2*ng0+2*ns0, tmp_lam_mask, 0, t+ii, 0, res_m+ii, 0);
-		AXPY(2*nb0+2*ng0+2*ns0, -1.0, m+ii, 0, res_m+ii, 0, res_m+ii, 0); // TODO not necessary if m is zero
-		if(mask_constr)
-			VECMUL(2*nb0+2*ng0+2*ns0, d_mask+ii, 0, res_m+ii, 0, res_m+ii, 0); // TODO not necessary if m is zero
-
-		// TODO mask res_g for the slacks of the soft constraints ??? no !!!
+		mu += VECMULDOT(2*nb0+2*ng0+2*ns0, lam+ii, 0, t+ii, 0, res_m+ii, 0);
+		AXPY(2*nb0+2*ng0+2*ns0, -1.0, m+ii, 0, res_m+ii, 0, res_m+ii, 0);
 
 		//for(jj=0; jj<2*nb0+2*ng0+2*ns0; jj++)
 		//	{
@@ -523,7 +482,6 @@ void OCP_QP_RES_COMPUTE(struct OCP_QP *qp, struct OCP_QP_SOL *qp_sol, struct OCP
 		}
 
 	//res->res_mu = mu*nct_inv;
-	res->res_mu = mu*nc_mask_inv;
 	res->res_mu_sum = mu;
 
 	return;
@@ -552,7 +510,6 @@ void OCP_QP_RES_COMPUTE_LIN (struct OCP_QP *qp, struct OCP_QP_SOL *qp_sol, struc
 	struct STRVEC *b = qp->b;
 	struct STRVEC *rqz = qp->rqz;
 	struct STRVEC *d = qp->d;
-	struct STRVEC *d_mask = qp->d_mask;
 	struct STRVEC *m = qp->m;
 	int **idxb = qp->idxb;
 	struct STRVEC *Z = qp->Z;
@@ -573,23 +530,8 @@ void OCP_QP_RES_COMPUTE_LIN (struct OCP_QP *qp, struct OCP_QP_SOL *qp_sol, struc
 
 	struct STRVEC *tmp_nbgM = ws->tmp_nbgM;
 	struct STRVEC *tmp_nsM = ws->tmp_nsM;
-	struct STRVEC *tmp_lam_mask = ws->tmp_lam_mask;
 
 	int nx0, nx1, nu0, nu1, nb0, ng0, ns0;
-
-	int mask_constr = 0;
-	if(ws->valid_nc_mask==1)
-		{
-		mask_constr = ws->mask_constr;
-		}
-	else
-		{
-		for(ii=0; ii<=N; ii++)
-			for(jj=0; jj<2*nb[ii]+2*ng[ii]+2*ns[ii]; jj++)
-				if((d_mask+ii)->pa[jj]!=1.0)
-					mask_constr = 1; // at least one masked constraint
-		// do not store these in ws, to guard against changes in d_mask
-		}
 
 	//
 	REAL mu = 0.0;
@@ -609,14 +551,9 @@ void OCP_QP_RES_COMPUTE_LIN (struct OCP_QP *qp, struct OCP_QP_SOL *qp_sol, struc
 		if(ii>0)
 			AXPY(nx0, -1.0, pi+(ii-1), 0, res_g+ii, nu0, res_g+ii, nu0);
 
-		if(mask_constr)
-			VECMUL(2*nb0+2*ng0+2*ns0, lam+ii, 0, d_mask+ii, 0, tmp_lam_mask, 0);
-		else
-			VECCP(2*nb0+2*ng0+2*ns0, lam+ii, 0, tmp_lam_mask, 0);
-
 		if(nb0+ng0>0)
 			{
-			AXPY(nb0+ng0, -1.0, tmp_lam_mask, 0, tmp_lam_mask, nb[ii]+ng[ii], tmp_nbgM+0, 0);
+			AXPY(nb0+ng0, -1.0, lam+ii, 0, lam+ii, nb[ii]+ng[ii], tmp_nbgM+0, 0);
 //			AXPY(nb0+ng0,  1.0, d+ii, 0, t+ii, 0, res_d+ii, 0);
 //			AXPY(nb0+ng0,  1.0, d+ii, nb0+ng0, t+ii, nb0+ng0, res_d+ii, nb0+ng0);
 			AXPY(2*nb0+2*ng0,  1.0, d+ii, 0, t+ii, 0, res_d+ii, 0);
@@ -639,14 +576,14 @@ void OCP_QP_RES_COMPUTE_LIN (struct OCP_QP *qp, struct OCP_QP_SOL *qp_sol, struc
 			{
 			// res_g
 			GEMV_DIAG(2*ns0, 1.0, Z+ii, 0, ux+ii, nu0+nx0, 1.0, rqz+ii, nu0+nx0, res_g+ii, nu0+nx0);
-			AXPY(2*ns0, -1.0, tmp_lam_mask, 2*nb0+2*ng0, res_g+ii, nu0+nx0, res_g+ii, nu0+nx0);
+			AXPY(2*ns0, -1.0, lam+ii, 2*nb0+2*ng0, res_g+ii, nu0+nx0, res_g+ii, nu0+nx0);
 			for(jj=0; jj<nb0+ng0; jj++)
 				{
 				idx = idxs_rev[ii][jj];
 				if(idx!=-1)
 					{
-					BLASFEO_VECEL(res_g+ii, nu0+nx0+idx) -= BLASFEO_VECEL(tmp_lam_mask, jj);
-					BLASFEO_VECEL(res_g+ii, nu0+nx0+ns0+idx) -= BLASFEO_VECEL(tmp_lam_mask, nb0+ng0+jj);
+					BLASFEO_VECEL(res_g+ii, nu0+nx0+idx) -= BLASFEO_VECEL(lam+ii, jj);
+					BLASFEO_VECEL(res_g+ii, nu0+nx0+ns0+idx) -= BLASFEO_VECEL(lam+ii, nb0+ng0+jj);
 					// res_d
 					BLASFEO_VECEL(res_d+ii, jj) -= BLASFEO_VECEL(ux+ii, nu0+nx0+idx);
 					BLASFEO_VECEL(res_d+ii, nb0+ng0+jj) -= BLASFEO_VECEL(ux+ii, nu0+nx0+ns0+idx);
@@ -656,9 +593,6 @@ void OCP_QP_RES_COMPUTE_LIN (struct OCP_QP *qp, struct OCP_QP_SOL *qp_sol, struc
 			AXPY(2*ns0, -1.0, ux+ii, nu0+nx0, t+ii, 2*nb0+2*ng0, res_d+ii, 2*nb0+2*ng0);
 			AXPY(2*ns0, 1.0, d+ii, 2*nb0+2*ng0, res_d+ii, 2*nb0+2*ng0, res_d+ii, 2*nb0+2*ng0);
 			}
-
-		if(mask_constr)
-			VECMUL(2*nb0+2*ng0+2*ns0, d_mask+ii, 0, res_d+ii, 0, res_d+ii, 0);
 
 		if(ii<N)
 			{
@@ -675,8 +609,6 @@ void OCP_QP_RES_COMPUTE_LIN (struct OCP_QP *qp, struct OCP_QP_SOL *qp_sol, struc
 		VECCP(2*nb0+2*ng0+2*ns0, m+ii, 0, res_m+ii, 0);
 		VECMULACC(2*nb0+2*ng0+2*ns0, Lam+ii, 0, t+ii, 0, res_m+ii, 0);
 		VECMULACC(2*nb0+2*ng0+2*ns0, lam+ii, 0, T+ii, 0, res_m+ii, 0);
-		if(mask_constr)
-			VECMUL(2*nb0+2*ng0+2*ns0, d_mask+ii, 0, res_m+ii, 0, res_m+ii, 0);
 
 		}
 

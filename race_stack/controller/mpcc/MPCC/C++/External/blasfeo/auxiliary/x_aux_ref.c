@@ -995,26 +995,18 @@ void REF_VECNRM_INF(int m, struct VEC *sx, int xi, REAL *ptr_norm)
 	int ii;
 	REAL *x = sx->pa + xi;
 	REAL norm = 0.0;
-	int is_nan = 0;
 	REAL tmp;
 	for(ii=0; ii<m; ii++)
 		{
-#if 0 // def USE_C99_MATH
-		norm = fmax(norm, fabs(x[ii])); // compiles into library fmax XXX does not propagate NaN correctly !!!
-		is_nan |= x[ii]!=x[ii]; // additional NaN check
+#if 0 //def USE_C99_MATH // does not propagate NaN !!!
+		norm = FMAX(norm, FABS(x[ii]));
 #else // no c99
-		tmp = fabs(x[ii]);
-		norm = tmp>norm ? tmp : norm; // compiles into max_sd XXX does not propagate NaN at all !!!
-		//norm = norm>=tmp ? norm : tmp; // compiles into cmp + blend XXX does not propagate NaN correctly !!!
-		is_nan |= x[ii]!=x[ii]; // additional NaN check
+		tmp = FABS(x[ii]);
+//		norm = tmp>norm ? tmp : norm; // does not propagate NaN !!!
+		norm = norm>=tmp ? norm : tmp;
 #endif
 		}
-	//*ptr_norm = norm;
-#ifdef NAN
-	*ptr_norm = is_nan==0 ? norm : NAN;
-#else
-	*ptr_norm = is_nan==0 ? norm : 0.0/0.0;
-#endif
+	*ptr_norm = norm;
 	return;
 	}
 

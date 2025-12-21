@@ -31,15 +31,6 @@ namespace internal {
 #define EIGEN_GPU_HAS_FP16_ARITHMETIC 1
 #endif
 
-// We need to distinguish ‘clang as the CUDA compiler’ from ‘clang as the host compiler,
-// invoked by NVCC’ (e.g. on MacOS). The former needs to see both host and device implementation
-// of the functions, while the latter can only deal with one of them.
-#if defined(EIGEN_CUDA_ARCH) || defined(EIGEN_HIPCC) || (defined(EIGEN_CUDACC) && EIGEN_COMP_CLANG && !EIGEN_COMP_NVCC)
-#define EIGEN_HAS_GPU_DEVICE_FUNCTIONS 1
-#else
-#define EIGEN_HAS_GPU_DEVICE_FUNCTIONS 0
-#endif
-
 // Make sure this is only available when targeting a GPU: we don't want to
 // introduce conflicts between these packet_traits definitions and the ones
 // we'll use on the host side (SSE, AVX, ...)
@@ -83,10 +74,7 @@ struct packet_traits<float> : default_packet_traits {
     HasGammaSampleDerAlpha = 1,
     HasIGammac = 1,
     HasBetaInc = 1,
-
-    HasBlend = 0,
-    HasFloor = 1,
-    HasCmp = EIGEN_HAS_GPU_DEVICE_FUNCTIONS
+    HasBlend = 0
   };
 };
 
@@ -155,7 +143,10 @@ EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE double2 pset1<double2>(const double& from)
   return make_double2(from, from);
 }
 
-#if EIGEN_HAS_GPU_DEVICE_FUNCTIONS
+// We need to distinguish ‘clang as the CUDA compiler’ from ‘clang as the host compiler,
+// invoked by NVCC’ (e.g. on MacOS). The former needs to see both host and device implementation
+// of the functions, while the latter can only deal with one of them.
+#if defined(EIGEN_CUDA_ARCH) || defined(EIGEN_HIPCC) || (defined(EIGEN_CUDACC) && EIGEN_COMP_CLANG && !EIGEN_COMP_NVCC)
 
 EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE float bitwise_and(const float& a, const float& b) {
   return __int_as_float(__float_as_int(a) & __float_as_int(b));
@@ -268,7 +259,8 @@ template <>
 EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE double2 pcmp_le<double2>(const double2& a, const double2& b) {
   return make_double2(le_mask(a.x, b.x), le_mask(a.y, b.y));
 }
-#endif  // EIGEN_HAS_GPU_DEVICE_FUNCTIONS
+#endif  // defined(EIGEN_CUDA_ARCH) || defined(EIGEN_HIPCC) || (defined(EIGEN_CUDACC) && EIGEN_COMP_CLANG &&
+        // !EIGEN_COMP_NVCC)
 
 template <>
 EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE float4 plset<float4>(const float& a) {

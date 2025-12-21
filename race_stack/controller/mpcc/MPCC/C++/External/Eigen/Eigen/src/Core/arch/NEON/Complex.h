@@ -73,13 +73,30 @@ struct packet_traits<std::complex<float> > : default_packet_traits {
 };
 
 template <>
-struct unpacket_traits<Packet1cf> : neon_unpacket_default<Packet1cf, std::complex<float>> {
-  using as_real = Packet2f;
+struct unpacket_traits<Packet1cf> {
+  typedef std::complex<float> type;
+  typedef Packet1cf half;
+  typedef Packet2f as_real;
+  enum {
+    size = 1,
+    alignment = Aligned16,
+    vectorizable = true,
+    masked_load_available = false,
+    masked_store_available = false
+  };
 };
 template <>
-struct unpacket_traits<Packet2cf> : neon_unpacket_default<Packet2cf, std::complex<float>> {
-  using half = Packet1cf;
-  using as_real = Packet4f;
+struct unpacket_traits<Packet2cf> {
+  typedef std::complex<float> type;
+  typedef Packet1cf half;
+  typedef Packet4f as_real;
+  enum {
+    size = 2,
+    alignment = Aligned16,
+    vectorizable = true,
+    masked_load_available = false,
+    masked_store_available = false
+  };
 };
 
 template <>
@@ -280,12 +297,10 @@ EIGEN_STRONG_INLINE Packet2cf pandnot<Packet2cf>(const Packet2cf& a, const Packe
 
 template <>
 EIGEN_STRONG_INLINE Packet1cf pload<Packet1cf>(const std::complex<float>* from) {
-  EIGEN_ASSUME_ALIGNED(from, unpacket_traits<Packet1cf>::alignment);
   EIGEN_DEBUG_ALIGNED_LOAD return Packet1cf(pload<Packet2f>((const float*)from));
 }
 template <>
 EIGEN_STRONG_INLINE Packet2cf pload<Packet2cf>(const std::complex<float>* from) {
-  EIGEN_ASSUME_ALIGNED(from, unpacket_traits<Packet2cf>::alignment);
   EIGEN_DEBUG_ALIGNED_LOAD return Packet2cf(pload<Packet4f>(reinterpret_cast<const float*>(from)));
 }
 
@@ -309,12 +324,10 @@ EIGEN_STRONG_INLINE Packet2cf ploaddup<Packet2cf>(const std::complex<float>* fro
 
 template <>
 EIGEN_STRONG_INLINE void pstore<std::complex<float> >(std::complex<float>* to, const Packet1cf& from) {
-  EIGEN_ASSUME_ALIGNED(to, unpacket_traits<Packet1cf>::alignment);
   EIGEN_DEBUG_ALIGNED_STORE pstore((float*)to, from.v);
 }
 template <>
 EIGEN_STRONG_INLINE void pstore<std::complex<float> >(std::complex<float>* to, const Packet2cf& from) {
-  EIGEN_ASSUME_ALIGNED(to, unpacket_traits<Packet2cf>::alignment);
   EIGEN_DEBUG_ALIGNED_STORE pstore(reinterpret_cast<float*>(to), from.v);
 }
 
@@ -525,13 +538,21 @@ struct packet_traits<std::complex<double> > : default_packet_traits {
 };
 
 template <>
-struct unpacket_traits<Packet1cd> : neon_unpacket_default<Packet1cd, std::complex<double>> {
-  using as_real = Packet2d;
+struct unpacket_traits<Packet1cd> {
+  typedef std::complex<double> type;
+  typedef Packet1cd half;
+  typedef Packet2d as_real;
+  enum {
+    size = 1,
+    alignment = Aligned16,
+    vectorizable = true,
+    masked_load_available = false,
+    masked_store_available = false
+  };
 };
 
 template <>
 EIGEN_STRONG_INLINE Packet1cd pload<Packet1cd>(const std::complex<double>* from) {
-  EIGEN_ASSUME_ALIGNED(from, unpacket_traits<Packet1cd>::alignment);
   EIGEN_DEBUG_ALIGNED_LOAD return Packet1cd(pload<Packet2d>(reinterpret_cast<const double*>(from)));
 }
 
@@ -645,7 +666,6 @@ EIGEN_STRONG_INLINE Packet1cd ploaddup<Packet1cd>(const std::complex<double>* fr
 
 template <>
 EIGEN_STRONG_INLINE void pstore<std::complex<double> >(std::complex<double>* to, const Packet1cd& from) {
-  EIGEN_ASSUME_ALIGNED(to, unpacket_traits<Packet1cd>::alignment);
   EIGEN_DEBUG_ALIGNED_STORE pstore(reinterpret_cast<double*>(to), from.v);
 }
 

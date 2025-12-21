@@ -4899,17 +4899,15 @@ void blasfeo_dvecnrm_inf(int m, struct blasfeo_dvec *sx, int xi, double *ptr_nor
 	double tmp;
 	for(ii=0; ii<m; ii++)
 		{
-#if 0 // def USE_C99_MATH
-		norm = fmax(norm, fabs(x[ii])); // compiles into library fmax XXX does not propagate NaN correctly !!!
-		is_nan |= x[ii]!=x[ii]; // additional NaN check
+#ifdef USE_C99_MATH
+		norm = fmax(norm, fabs(x[ii]));
+		is_nan |= x[ii]!=x[ii];
 #else // no c99
 		tmp = fabs(x[ii]);
-		norm = tmp>norm ? tmp : norm; // compiles into max_sd XXX does not propagate NaN at all !!!
-		//norm = norm>=tmp ? norm : tmp; // compiles into cmp + blend XXX does not propagate NaN correctly !!!
-		is_nan |= x[ii]!=x[ii]; // additional NaN check
+		norm = tmp>norm ? tmp : norm;
+		is_nan |= x[ii]!=x[ii];
 #endif
 		}
-	//*ptr_norm = norm;
 #ifdef NAN
 	*ptr_norm = is_nan==0 ? norm : NAN;
 #else

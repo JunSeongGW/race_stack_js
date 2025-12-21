@@ -8,7 +8,7 @@
 // with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 // Various sanity tests with exceptions and non trivially copyable scalar type.
-//  - no memory leak when a custom scalar type throw an exceptions
+//  - no memory leak when a custom scalar type trow an exceptions
 //  - todo: complete the list of tests!
 
 #define EIGEN_STACK_ALLOCATION_LIMIT 100000000
@@ -21,8 +21,9 @@
     AnnoyingScalar::countdown = 100;                                                                                  \
     int before = AnnoyingScalar::instances;                                                                           \
     bool exception_thrown = false;                                                                                    \
-    EIGEN_TRY { OP; }                                                                                                 \
-    EIGEN_CATCH(my_exception) {                                                                                       \
+    try {                                                                                                             \
+      OP;                                                                                                             \
+    } catch (my_exception) {                                                                                          \
       exception_thrown = true;                                                                                        \
       VERIFY(AnnoyingScalar::instances == before && "memory leak detected in " && EIGEN_MAKESTRING(OP));              \
     }                                                                                                                 \
@@ -34,11 +35,7 @@ EIGEN_DECLARE_TEST(exceptions) {
   typedef Eigen::Matrix<AnnoyingScalar, Dynamic, Dynamic> MatrixType;
 
   {
-#if defined(EIGEN_EXCEPTIONS) && !defined(EIGEN_TEST_ANNOYING_SCALAR_DONT_THROW)
     AnnoyingScalar::dont_throw = false;
-#else
-    AnnoyingScalar::dont_throw = true;
-#endif
     int n = 50;
     VectorType v0(n), v1(n);
     MatrixType m0(n, n), m1(n, n), m2(n, n);
