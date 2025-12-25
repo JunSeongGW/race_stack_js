@@ -26,6 +26,7 @@ class OnTrackSysId(Node):
         # Declare parameters with default values
         self.declare_parameter('racecar_version', 'SIM')
         self.declare_parameter('save_LUT_name', 'NUCx_on_track_pacejka')
+        self.declare_parameter('save_dir', '/home/misys/forza_ws/race_stack/controller/map/lut')
         self.declare_parameter('plot_model', True)
         self.declare_parameter('odom_topic', '/car_state/odom')
         self.declare_parameter('ackermann_cmd_topic', '/vesc/high_level/ackermann_cmd_mux/input/nav_1')
@@ -33,6 +34,7 @@ class OnTrackSysId(Node):
         # Get parameters
         self.racecar_version = self.get_parameter('racecar_version').value
         self.save_LUT_name = self.get_parameter('save_LUT_name').value
+        self.save_dir = self.get_parameter('save_dir').value
         self.plot_model = self.get_parameter('plot_model').value
 
         self.get_logger().info(f"Racecar version: {self.racecar_version}")
@@ -118,7 +120,7 @@ class OnTrackSysId(Node):
     def run_nn_train(self):
         """ Train the neural network using collected data. """
         self.get_logger().info("Training neural network...")
-        nn_train(self.data, self.racecar_version, self.save_LUT_name, self.plot_model)
+        nn_train(self.data, self.racecar_version, self.save_LUT_name, self.save_dir, self.plot_model)
 
 
 def main(args=None):

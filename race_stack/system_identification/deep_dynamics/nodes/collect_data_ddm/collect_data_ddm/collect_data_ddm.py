@@ -12,6 +12,19 @@ import os
 class CollectDataDDM(Node):
     def __init__(self):
         super().__init__('collect_data_ddm')
+
+
+        self.declare_parameter('save_dir','/home/misys/forza_ws/race_stack/system_identification/deep_dynamics/data')
+        self.declare_parameter('csv_name','teras.csv')
+
+        self.save_dir = self.get_parameter('save_dir').get_parameter_value().string_value
+        self.csv_name = self.get_parameter('csv_name').get_parameter_value().string_value
+        os.makedirs(self.save_dir, exist_ok=True)
+
+
+        self.get_logger().info(f"CSV save dir : {self.save_dir}")
+        self.get_logger().info(f"CSV file name: {self.csv_name}")
+
         self.create_subscription(Odometry, '/car_state/odom', self.odom_callback, 10)
         self.create_subscription(AckermannDriveStamped, '/drive', self.steer_callback, 10)
         self.create_subscription(VescStateStamped, '/sensors/core', self.duty_cycle_callback, 10)
@@ -82,25 +95,24 @@ class CollectDataDDM(Node):
             brake               # brake_ped_cmd
         ])
 
-    def save_to_csv(self, filename="1022_test.csv"):
+    def save_to_csv(self):
         if not self.data:
             self.get_logger().warn("No data to save.")
             return
 
-        data_np = np.array(self.data)
+        filepath = os.path.join(self.save_dir, self.csv_name)
 
-        filepath = os.path.join(os.path.expanduser("~/shared_dir"), filename)
         with open(filepath, mode='w', newline='') as f:
             writer = csv.writer(f)
-            writer.writerow(["time", "x", "y", "vx", "vy", "phi", "delta", "omega", "ax","deltadelta", "roll", "throttle_ped_cmd", "brake_ped_cmd"])
-            for i in range(len(data_np[:, 0])):
-                row = [
-                    data_np[i, 0], data_np[i, 1], data_np[i, 2],
-                    data_np[i, 3], data_np[i, 4], data_np[i, 5], data_np[i, 6],
-                    data_np[i, 7], data_np[i, 8], data_np[i, 9], data_np[i, 10], data_np[i, 11], data_np[i, 12]
-                ]
+            writer.writerow([
+                "time", "x", "y", "vx", "vy", "phi",
+                "delta", "omega", "ax", "deltadelta",
+                "roll", "throttle_ped_cmd", "brake_ped_cmd"
+            ])
+            for row in self.data:
                 writer.writerow(row)
-        self.get_logger().info(f"Saved filtered data to {filepath}")
+
+        self.get_logger().info(f"Saved data to {filepath}")
 
 def main(args=None):
     rclpy.init(args=args)

@@ -22,6 +22,11 @@ def generate_launch_description():
             description='Ackermann command topic'
         ),
         DeclareLaunchArgument(
+            'save_dir',
+            default_value='/home/misys/forza_ws/race_stack/controller/map/lut',
+            description='Directory to save LUT csv'
+        ),
+        DeclareLaunchArgument(
             'save_LUT_name',
             default_value='F1TENTH_Pacejka',
             description='Name for saving LUT'
@@ -47,6 +52,7 @@ def generate_launch_description():
                 'odom_topic': LaunchConfiguration('odom_topic'),
                 'ackermann_cmd_topic': LaunchConfiguration('ackermann_cmd_topic'),
                 'save_LUT_name': LaunchConfiguration('save_LUT_name'),
+                'save_dir': LaunchConfiguration('save_dir'),
                 'plot_model': LaunchConfiguration('plot_model'),
                 'racecar_version': LaunchConfiguration('racecar_version'),
             }]

@@ -202,7 +202,7 @@ def generate_training_set(training_data, model):
     
     return X_train, y_train
 
-def nn_train(training_data, racecar_version, save_LUT_name, plot_model):
+def nn_train(training_data, racecar_version, save_LUT_name, save_dir, plot_model):
     """
     Train the neural network.
     
@@ -288,4 +288,4 @@ def nn_train(training_data, racecar_version, save_LUT_name, plot_model):
     
     # Generate Look-Up Table (LUT) with the updated model
     logger.info("LUT is being generated...")
-    LookupGenerator(racecar_version, save_LUT_name).run_generator()
+    LookupGenerator(racecar_version, save_LUT_name, save_dir).run_generator()

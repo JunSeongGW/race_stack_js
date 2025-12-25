@@ -50,11 +50,12 @@ class Simulator:
     return self.sol
 
 class LookupGenerator:
-  def __init__(self, racecar_version, save_LUT_name):
+  def __init__(self, racecar_version, save_LUT_name, save_dir):
     self.racecar_version = racecar_version
     model_name = self.racecar_version +"_pacejka"
     self.sim = Simulator(model_name)
     self.save_LUT_name = save_LUT_name
+    self.save_dir = save_dir
     self.lookup_table = None
 
   def run_generator(self):
@@ -169,8 +170,7 @@ class LookupGenerator:
 
   def save_lookup(self):
     # path = get_package_share_directory('on_track_sys_id')
-    path = "/home/misys/forza_ws/race_stack/controller/map/lut"
-    file_path = os.path.join(path, self.save_LUT_name + "_lookup_table.csv")
+    os.makedirs(self.save_dir, exist_ok=True)
+    file_path = os.path.join(self.save_dir, self.save_LUT_name + "_lookup_table.csv")
     np.savetxt(file_path, self.lookup_table, delimiter=",")
     print(f"SAVED LOOKUP TABLE TO: {file_path}")
-    # self.logger.info(f"SAVED LOOKUP TABLE TO: {file_path}")
