@@ -1,0 +1,64 @@
+STATE:
+  - VX
+  - VY
+  - YAW_RATE
+ACTIONS:
+  - THROTTLE
+  - STEERING
+PARAMETERS:
+  - Bf:
+    Min: 5.3895
+    Max: 6.3895
+  - Cf:
+    Min: 1.8213
+    Max: 2.2213
+  - Df:
+    Min: 1.1147
+    Max: 1.3147
+  - Ef:
+    Min: 0.8037
+    Max: 1.0037
+  - Br:
+    Min: 4.6099
+    Max: 5.6099
+  - Cr:
+    Min: 1.7704
+    Max: 2.1704
+  - Dr:
+    Min: 1.2146
+    Max: 1.4146
+  - Er:
+    Min: 0.9631
+    Max: 1.1631
+  - Cm1:
+    Min: 0.001
+    Max: 100.0
+  - Cm2:
+    Min: 0.001
+    Max: 100.0
+  - Cr0:
+    Min: 0.001
+    Max: 100.0
+  - Cr2:
+    Min: 0.001
+    Max: 100.0
+  - Iz:
+    Min: 0.18197
+    Max: 0.18197
+VEHICLE_SPECS:
+  lf: 0.15933
+  lr: 0.16067
+  mass: 4.282
+MODEL:
+  NAME: DeepDynamicsF110
+  HORIZON: 7
+  LAYERS:
+    - DENSE:
+      OUT_FEATURES: 206
+      ACTIVATION: Mish
+  OPTIMIZATION:
+    LOSS: MSE
+    BATCH_SIZE: 128
+    NUM_EPOCHS: 400
+    OPTIMIZER: Adam
+    LR: 0.006852
