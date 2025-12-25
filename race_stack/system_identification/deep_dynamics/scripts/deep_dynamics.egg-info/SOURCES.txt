@@ -1,7 +1,6 @@
 LICENSE
 README.md
 pyproject.toml
-setup.py
 deep_dynamics.egg-info/PKG-INFO
 deep_dynamics.egg-info/SOURCES.txt
 deep_dynamics.egg-info/dependency_links.txt

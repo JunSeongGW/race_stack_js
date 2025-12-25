@@ -181,11 +181,10 @@ def train(
         plt.title("Training & Validation Loss Over Epochs")
         plt.legend()
         plt.grid(True)
-        plt.ylim(0, 0.02)
-        plt.yticks(np.arange(0, 0.02, 0.002))
+        plt.ylim(0, 0.1)
+        plt.yticks(np.arange(0, 0.1, 0.01))
         plt.show()
     else:
-        # 필요하면 파일로 저장 (원하면 경로/이름 너 코드 규칙에 맞춰 바꿔도 됨)
         try:
             plt.figure(figsize=(10, 5))
             plt.plot(range(1, len(train_losses) + 1), train_losses, label="Train Loss")
@@ -264,5 +263,5 @@ if __name__ == "__main__":
         argdict["log_wandb"],
         output_dir,
         project_name=None,
-        use_ray_tune=False,  # 여기서 단독 학습이면 False
+        use_ray_tune=False,
     )

@@ -73,15 +73,6 @@ def evaluate_predictions(model, test_data_loader, eval_coeffs):
         pred_np = torch.stack(predictions).cpu().detach().numpy()
         gt_np = torch.cat(ground_truth).squeeze().cpu().detach().numpy()
 
-        csv_save_path = "ddm_no_bound_predicted_states.csv"
-        np.savetxt(csv_save_path, 
-                np.hstack([pred_np, gt_np]), 
-                delimiter=",", 
-                header="vx_pred,vy_pred,w_pred,vx_gt,vy_gt,w_gt", 
-                comments='')
-        
-        print(f"[INFO] 예측 결과가 {csv_save_path} 로 저장되었습니다.")
-
 
         # Plot 설정
         plt.figure(figsize=(10, 4))
