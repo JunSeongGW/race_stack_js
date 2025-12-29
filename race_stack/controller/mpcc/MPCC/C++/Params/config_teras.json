@@ -7,9 +7,9 @@
   "Ts": 0.05,
   "v0": 0.1,
 
-  "model_path": "/home/misys/forza_ws/race_stack/controller/MPCC/C++/Params/model_teras.json",
-  "cost_path": "/home/misys/forza_ws/race_stack/controller/MPCC/C++/Params/cost_teras.json",
-  "bounds_path": "/home/misys/forza_ws/race_stack/controller/MPCC/C++/Params/bounds_teras.json",
-  "track_path": "/home/misys/forza_ws/race_stack/controller/MPCC/C++/Params/track_teras.json",
-  "normalization_path": "/home/misys/forza_ws/race_stack/controller/MPCC/C++/Params/normalization_teras.json"
+  "model_path": "/home/misys/forza_ws/race_stack/controller/mpcc/MPCC/C++/Params/model_teras.json",
+  "cost_path": "/home/misys/forza_ws/race_stack/controller/mpcc/MPCC/C++/Params/cost_teras.json",
+  "bounds_path": "/home/misys/forza_ws/race_stack/controller/mpcc/MPCC/C++/Params/bounds_teras.json",
+  "track_path": "/home/misys/forza_ws/race_stack/controller/mpcc/MPCC/C++/Params/track_teras.json",
+  "normalization_path": "/home/misys/forza_ws/race_stack/controller/mpcc/MPCC/C++/Params/normalization_teras.json"
 }

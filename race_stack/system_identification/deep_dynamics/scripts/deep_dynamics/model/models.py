@@ -304,7 +304,6 @@ class DeepDynamicsModelF110(ModelBase):
         
         super().__init__(param_dict, [GuardLayer(param_dict)], eval)
 
-
     # 아래 함수 MPCC 모델에 맞게 수정 (09.25)
     def differential_equation(self, x, output, Ts=0.05):
         # unpack params / states

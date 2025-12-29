@@ -7,29 +7,29 @@ ACTIONS:
   - STEERING
 PARAMETERS:
   - Bf:
-    Min: 5.3895
-    Max: 6.3895
+    Min: 2.3895
+    Max: 8.3895
   - Cf:
-    Min: 1.8213
-    Max: 2.2213
+    Min: 0.8213
+    Max: 3.2213
   - Df:
-    Min: 1.1147
-    Max: 1.3147
+    Min: 0.1147
+    Max: 2.3147
   - Ef:
-    Min: 0.8037
-    Max: 1.0037
+    Min: 0.1037
+    Max: 1.8037
   - Br:
-    Min: 4.6099
-    Max: 5.6099
+    Min: 1.6099
+    Max: 10.6099
   - Cr:
-    Min: 1.7704
-    Max: 2.1704
+    Min: 0.7704
+    Max: 15.1704
   - Dr:
-    Min: 1.2146
-    Max: 1.4146
+    Min: 0.2146
+    Max: 2.4146
   - Er:
-    Min: 0.9631
-    Max: 1.1631
+    Min: 0.0631
+    Max: 2.1631
   - Cm1:
     Min: 0.001
     Max: 100.0
@@ -51,14 +51,29 @@ VEHICLE_SPECS:
   mass: 4.282
 MODEL:
   NAME: DeepDynamicsF110
-  HORIZON: 7
+  HORIZON: 6
   LAYERS:
+    - GRU:
+      OUT_FEATURES: 36
+      LAYERS: 2
     - DENSE:
-      OUT_FEATURES: 206
+      OUT_FEATURES: 245
+      ACTIVATION: Mish
+    - DENSE:
+      OUT_FEATURES: 245
+      ACTIVATION: Mish
+    - DENSE:
+      OUT_FEATURES: 245
+      ACTIVATION: Mish
+    - DENSE:
+      OUT_FEATURES: 245
+      ACTIVATION: Mish
+    - DENSE:
+      OUT_FEATURES: 245
       ACTIVATION: Mish
   OPTIMIZATION:
     LOSS: MSE
-    BATCH_SIZE: 128
+    BATCH_SIZE: 16
     NUM_EPOCHS: 400
     OPTIMIZER: Adam
-    LR: 0.006852
+    LR: 0.000779

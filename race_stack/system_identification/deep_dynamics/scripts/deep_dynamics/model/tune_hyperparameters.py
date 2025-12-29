@@ -87,7 +87,7 @@ def tune_hyperparams(
     )
 
     output_dir = (
-        "/home/misys/project_ddm/deep-dynamics/deep_dynamics/output/tune_hype/"
+        "/home/misys/forza_ws/race_stack/system_identification/deep_dynamics/scripts/deep_dynamics/output/tune_hype/"
         f"{os.path.splitext(os.path.basename(model_cfg))[0]}/{experiment_name}"
     )
     os.makedirs(output_dir, exist_ok=True)

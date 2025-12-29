@@ -119,9 +119,26 @@ target_link_libraries(mpcc_node_sim
 )
 
 
+add_executable(dummy_corridor_generator
+  src/dummy_corridor_generator.cpp
+)
+
+target_compile_features(dummy_corridor_generator PUBLIC cxx_std_17)
+
+ament_target_dependencies(dummy_corridor_generator
+  rclcpp
+  rosidl_default_runtime
+)
+
+target_link_libraries(dummy_corridor_generator
+  "${cpp_typesupport_target}"
+)
+
+
 install(TARGETS
   mpcc_node
   mpcc_node_sim
+  dummy_corridor_generator
   DESTINATION lib/${PROJECT_NAME}
 )
 

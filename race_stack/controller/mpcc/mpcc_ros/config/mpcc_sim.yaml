@@ -1,7 +1,7 @@
 mpcc_node:
   ros__parameters:
     # JSON 설정 파일 경로
-    config_file: "/home/misys/forza_ws/race_stack/controller/mpcc/MPCC/C++/Params/config_hall.json"
+    config_file: "/home/misys/forza_ws/race_stack/controller/mpcc/MPCC/C++/Params/config_teras.json"
 
     # 제어 루프 주기 (Hz)
     loop_late_hz_: 40.0
