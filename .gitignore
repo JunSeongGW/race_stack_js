@@ -15,3 +15,16 @@ log/
 # data/output (optional - 아래 폴더들이 커지면 보통 제외)
 race_stack/system_identification/deep_dynamics/data/
 race_stack/system_identification/deep_dynamics/scripts/deep_dynamics/output/
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# numba cache
+*.nbi
+*.nbc
+
+# ROS2 / colcon
+build/
+install/
+log/
