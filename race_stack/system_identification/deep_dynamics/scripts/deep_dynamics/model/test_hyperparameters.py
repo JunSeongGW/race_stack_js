@@ -77,7 +77,7 @@ def test_hyperparams(model_cfg, log_wandb):
         print("Starting experiment: {}".format(dir))
         losses = evaluate_predictions(model, test_data_loader, False)
         if log_wandb:
-            wandb.login(key="4214ae4261e0e9981ec441ef4690cbeca5485603")
+            wandb.login(key="123456789abcdefghijklmnopqrstuvwxyz") # 본인의 API 키 입력
             api = wandb.Api()
             run = api.runs(path="junseonggg2001-soong-sil-univ/{}".format(model_name), filters={"display_name" : dir})[0]
             run.summary["test_loss"] = np.mean(losses)
